@@ -1,32 +1,33 @@
-['24.06.2022'](#24.06.2022)
-## 24.06.2022
+[24.06.2022](#24.06.2022)
+# 24.06.2022
+## Instalacja Ubuntu 22.04 i konfiguracja
 * pobranie obrazu ubuntu 22.04 i ogarniecie usb
 * wpiecie usb do NUC'a i odpalenie Ubuntu 22.04 w live CD
-* Stworzenie nowej partycji (około 100 GB) na nowy system i nazwanie jej "Ubuntu 22.04" -- źle
+* Stworzenie nowej partycji (około 100 GB) na nowy system i nazwanie jej "Ubuntu 22.04" - __źle__
 * nazwanie partycji ze starym systemem "Ubuntu 16.04"
 * stworzenie 100 GB wolnego, niezaalokowanego miejsca na dysku
 * uruchomienie instalatora Ubuntu 22.04 i wybranie "install alongside ubuntu 16.04"
-* jeżeli nie można połączyć się po ssh, to należy zainstalować serwer openssh
+* jeżeli nie można połączyć się po ssh, to należy zainstalować serwer `openssh`
 ```
 sudo apt update
 sudo apt install openssh-server
 ```
 
-### Sieć w labie
+## Sieć w labie
 > __Turtlebot5__   
-  IP: 192.168.5.55    
-  login: turtlebot5  
-  hasło: turtlebot  
+IP: 192.168.5.55    
+login: turtlebot5  
+hasło: turtlebot  
 
-### grub-reboot
+## Zmiana systemu (grub-reboot)
 Żeby zmienić system to należy
 ```
 sudo grub-reboot <N>
 sudo reboot
 ```
-**N = 0 -> Ubuntu 22.04**
 
-**N = 4 -> Ubuntu 16.04**
+> N = 0 -> Ubuntu 22.04  
+  N = 4 -> Ubuntu 16.04
 
 Przy przełączeniu pojawia się problem z kluczem ssh, co można rozwiązać wykorzystując (podpowiadane przez system odpowiednim komunikatem)
 ```
