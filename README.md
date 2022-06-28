@@ -53,6 +53,84 @@ Po przełączeniu systemu pojawia się problem z kluczem `ssh`, przez co nie jes
 ssh-keygen -f "/home/user/.ssh/known_hosts" -R "192.168.5.55"
 ```
 
-## Instalacja ROS2 Humble na Ubuntu 22.04
+> **Uwaga!**  
+Na każdym z systemów operacyjnych został napisany skrypt umożliwiający łatwe przełączenie się z jednego systemu na drugi.
+
+Na `Ubuntu 22.04` wystarczy wywołać:
+```
+~/switch_to_ros1.sh
+```
+Na `Ubuntu 16.04` wystarczy wywołać:
+```
+~/switch_to_ros2.sh
+```
+Kody źródłowe skryptów znajdują się w bieżących notatkach [./notes/27.06.2022.md](./notes/27.06.2022.md).
+## Instalacja ROS2 Humble na `Ubuntu 22.04`
+W celu zainstalowania ROS'a 2 (zgodnie z instrukcjami z https://docs.ros.org/en/humble/Installation/Ubuntu-Install-Debians.html):
+* Aktualizować apt i zainstalować ROS'a 2 za pomocą paczek
+```
+sudo apt update
+sudo apt upgrade
+sudo apt install ros-humble-desktop
+```
+* Dodać odpowiedni wpis do `.bashrc`
+```
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+```
+* Zostawić ROS_DOIMAIN_ID bez zmian (stan na 27.06.2022)
+* Zainstalować narzędzie `colcon` (przydatne potem)
+```
+sudo apt install python3-colcon-common-extensions
+```
+* Skonfigurować `colcon_cd` oraz autouzupełnianie
+```
+echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
+echo "export _colcon_cd_root=/opt/ros/humble/" >> ~/.bashrc
+echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
+```
+> **Uwaga!**  
+W celu sprawdzenia poprawności instalacji można uruchomić przykład `talker-listener`. Wystarczy wywołać instrukcje (w osobnych instancjach terminala):  
+```
+ros2 run demo_nodes_cpp talker
+```
+
+```
+ros2 run demo_nodes_py listener
+```
+## Instalacja `Nav2` na Ubuntu 22.04 na Intel NUC
+Nav2 zbudowano ze źródeł korzystając z tymczasowego patch'a naprawiającego błąd DDS'a (link: https://github.com/gezp/navigation2/tree/fix_obstacle_layer). W celu przeprowadzenia takiej instalacji:
+* Stworzyć workspace na `Nav2`
+```
+mkdir -p ~/nav2_ws/src
+```
+* Pobrać kod źródłowy
+```
+cd ~
+git clone https://github.com/gezp/navigation2.git
+```
+* Przekopiować poszczególne paczki do workspace'a
+```
+cp -r ~/navigation2/* ~/nav2_ws/src/
+```
+*  Zainstalować dependencje za pomocą `rosdep`
+```
+cd ~/nav2_ws/
+rosdep install -y -r -q --from-paths src --ignore-src --rosdistro humble
+```
+* Zbudować paczki
+```
+colcon build --symlink-install
+```
+> **Uwaga!**  
+Aby uniknąć bardzo długiego czasu kompilacji (na Intel NUC to ponad 30 minut) można usunąć z `nav2_ws` folder  `nav2_system_tests` przed rozpoczęciem kompilacji.
+
+> **Uwaga!**  
+W celu przetestowania poprawności działania `Nav2` można uruchomić przykładową symulację Turtlebot3:
+```
+sudo apt install ros-humble-turtle*
+export TURTLEBOT3_MODEL=waffle
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+ros2 launch nav2_bringup tb3_simulation_launch.py
+```
 
 ## Instalacja sterowników Kobuki Base (ROS2 Humble)
