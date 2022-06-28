@@ -1,10 +1,14 @@
 # README
 
 ## Spis treści
-1. [Instalacja Ubuntu 22.04 na Intel NUC](#Instalacja-Ubuntu-22.04-na-Intel-NUC)
-2. [Zmiana systemu przy połączeniu ssh](#zmiana-systemu-przy-połączeniu-ssh)
-3. [Instalacja ROS2 Humble na Ubuntu 22.04](#instalacja-ros2-humble-na-ubuntu-2204)
-4. [Instalacja sterowników Kobuki Base (ROS2 Humble)](#instalacja-sterowników-kobuki-base-ros2-humble)
+
+### 1. [Instalacja Ubuntu 22.04 na Intel NUC](#Instalacja-Ubuntu-22.04-na-Intel-NUC)
+### 2. [Zmiana systemu przy połączeniu ssh](#zmiana-systemu-przy-połączeniu-ssh)
+### 3. [Instalacja ROS2 Humble na Ubuntu 22.04](#instalacja-ros2-humble-na-ubuntu-2204)
+### 4. [Instalacja Nav2 na Ubuntu 22.04 na Intel NUC](#instalacja-nav2-na-ubuntu-2204-na-intel-nuc)
+### 5. [Instalacja sterowników Kobuki Base (ROS2 Humble)](#instalacja-sterowników-kobuki-base-ros2-humble)
+---
+
 ## Instalacja Ubuntu 22.04 na Intel NUC
 Aby zainstalować `Ubuntu 22.04` na Intel NUC:
 * Pobrać obraz .iso `Ubuntu 22.04 LTS` i za pomocą dowolnego wypalić obraz systemu na pamięci USB  
