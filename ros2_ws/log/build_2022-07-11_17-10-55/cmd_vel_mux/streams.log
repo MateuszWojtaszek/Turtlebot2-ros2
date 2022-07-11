@@ -1,0 +1,127 @@
+[0.029s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux
+[0.173s] -- The C compiler identification is GNU 9.4.0
+[0.244s] -- The CXX compiler identification is GNU 9.4.0
+[0.251s] -- Check for working C compiler: /usr/bin/cc
+[0.329s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.331s] -- Detecting C compiler ABI info
+[0.419s] -- Detecting C compiler ABI info - done
+[0.438s] -- Detecting C compile features
+[0.439s] -- Detecting C compile features - done
+[0.442s] -- Check for working CXX compiler: /usr/bin/c++
+[0.547s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.547s] -- Detecting CXX compiler ABI info
+[0.641s] -- Detecting CXX compiler ABI info - done
+[0.659s] -- Detecting CXX compile features
+[0.659s] -- Detecting CXX compile features - done
+[0.662s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[0.706s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.706s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.781s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.818s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[0.861s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.871s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.982s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.023s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.134s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.276s] -- Found rcl_interfaces: 1.0.3 (/opt/ros/galactic/share/rcl_interfaces/cmake)
+[1.300s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.358s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.362s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.391s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.392s] -- Looking for pthread.h
+[1.481s] -- Looking for pthread.h - found
+[1.482s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.574s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.574s] -- Looking for pthread_create in pthreads
+[1.647s] -- Looking for pthread_create in pthreads - not found
+[1.647s] -- Looking for pthread_create in pthread
+[1.732s] -- Looking for pthread_create in pthread - found
+[1.734s] -- Found Threads: TRUE  
+[2.013s] -- Found rclcpp_components: 9.2.1 (/opt/ros/galactic/share/rclcpp_components/cmake)
+[2.175s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[2.389s] -- Found launch_testing_ament_cmake: 0.17.1 (/opt/ros/galactic/share/launch_testing_ament_cmake/cmake)
+[2.404s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[2.468s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[2.478s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[2.484s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.484s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[2.484s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so
+[2.545s] -- Found PythonExtra: .so  
+[2.572s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.573s] -- Configured cppcheck include dirs: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux/include
+[2.573s] -- Configured cppcheck exclude dirs and/or files: 
+[2.596s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.596s] -- Configured cpplint exclude dirs and/or files: 
+[2.596s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.597s] -- Added test 'lint_cmake' to check CMake code style
+[2.612s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.621s] -- Added test 'uncrustify' to check C / C++ code style
+[2.621s] -- Configured uncrustify additional arguments: 
+[2.624s] -- Added test 'xmllint' to check XML markup files
+[2.642s] -- Configuring done
+[2.663s] -- Generating done
+[2.666s] -- Build files have been written to: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux
+[2.680s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux
+[2.681s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j4 -l4
+[2.801s] [35m[1mScanning dependencies of target cmd_vel_mux[0m
+[2.900s] [ 25%] [32mBuilding CXX object CMakeFiles/cmd_vel_mux.dir/src/cmd_vel_mux.cpp.o[0m
+[9.236s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[9.236s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[9.237s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[9.237s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[9.237s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[9.237s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[9.237s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[9.237s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[9.238s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[9.238s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[9.238s]                  from [01m[K/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp:46[m[K,
+[9.238s]                  from [01m[K/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux/src/cmd_vel_mux.cpp:37[m[K:
+[9.238s] [01m[K/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux/src/cmd_vel_mux.cpp:[m[K In member function ‘[01m[Kvoid cmd_vel_mux::CmdVelMux::configureFromParameters(const std::map<std::__cxx11::basic_string<char>, cmd_vel_mux::ParameterValues>&)[m[K’:
+[9.238s] [01m[K/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux/src/cmd_vel_mux.cpp:196:34:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 7 has type ‘[01m[Kint64_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wformat=[m[K]
+[9.239s]   196 |       RCLCPP_DEBUG(get_logger(), [01;35m[K"CmdVelMux : subscribed to '%s' on topic '%s'. pr: %d, to: %.2f"[m[K,
+[9.239s]       |                                  [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[9.239s]   197 |         values->name_.c_str(), values->values_.topic.c_str(),
+[9.239s]   198 |         [32m[Kvalues->values_.priority[m[K, values->values_.timeout);
+[9.239s]       |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~[m[K  
+[9.239s]       |                         [32m[K|[m[K
+[9.240s]       |                         [32m[Kint64_t {aka long int}[m[K
+[9.241s] [01m[K/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux/src/cmd_vel_mux.cpp:196:86:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[9.241s]   196 | get_logger(), "CmdVelMux : subscribed to '%s' on topic '%s'. pr: [01;36m[K%d[m[K, to: %.2f",
+[9.241s]       |                                                                  [01;36m[K~^[m[K
+[9.241s]       |                                                                   [01;36m[K|[m[K
+[9.241s]       |                                                                   [01;36m[Kint[m[K
+[9.241s]       |                                                                  [32m[K%ld[m[K
+[26.198s] [ 50%] [32m[1mLinking CXX shared library libcmd_vel_mux.so[0m
+[27.848s] [ 50%] Built target cmd_vel_mux
+[27.910s] [35m[1mScanning dependencies of target cmd_vel_mux_node[0m
+[28.054s] [ 75%] [32mBuilding CXX object CMakeFiles/cmd_vel_mux_node.dir/src/cmd_vel_mux_node.cpp.o[0m
+[34.507s] [100%] [32m[1mLinking CXX executable cmd_vel_mux_node[0m
+[34.767s] [100%] Built target cmd_vel_mux_node
+[34.783s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j4 -l4
+[34.834s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux
+[34.849s] -- Install configuration: ""
+[34.850s] -- Execute custom install script
+[34.850s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/libcmd_vel_mux.so
+[34.863s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp
+[34.875s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node
+[34.887s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml
+[34.899s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py
+[34.912s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py
+[34.924s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux
+[34.936s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux
+[34.956s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh
+[34.974s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv
+[34.985s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh
+[34.997s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv
+[35.008s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash
+[35.020s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh
+[35.032s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh
+[35.044s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv
+[35.056s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv
+[35.068s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux
+[35.081s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux
+[35.092s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake
+[35.104s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake
+[35.116s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.xml
+[35.142s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux

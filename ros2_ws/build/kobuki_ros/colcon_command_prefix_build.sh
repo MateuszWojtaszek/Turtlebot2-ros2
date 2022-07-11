@@ -1,0 +1,11 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.sh"
+. "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.sh"

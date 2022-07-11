@@ -1,0 +1,98 @@
+[0.031s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node
+[0.106s] -- The C compiler identification is GNU 9.4.0
+[0.177s] -- The CXX compiler identification is GNU 9.4.0
+[0.184s] -- Check for working C compiler: /usr/bin/cc
+[0.272s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.273s] -- Detecting C compiler ABI info
+[0.368s] -- Detecting C compiler ABI info - done
+[0.384s] -- Detecting C compile features
+[0.385s] -- Detecting C compile features - done
+[0.387s] -- Check for working CXX compiler: /usr/bin/c++
+[0.491s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.492s] -- Detecting CXX compiler ABI info
+[0.595s] -- Detecting CXX compiler ABI info - done
+[0.617s] -- Detecting CXX compile features
+[0.618s] -- Detecting CXX compile features - done
+[0.621s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[0.663s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.664s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.740s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.782s] -- Found angles: 1.12.4 (/opt/ros/galactic/share/angles/cmake)
+[0.786s] -- Found diagnostic_msgs: 2.2.4 (/opt/ros/galactic/share/diagnostic_msgs/cmake)
+[0.834s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.846s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.962s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[1.007s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.124s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.269s] -- Found diagnostic_updater: 2.1.3 (/opt/ros/galactic/share/diagnostic_updater/cmake)
+[1.366s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.370s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.404s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.405s] -- Looking for pthread.h
+[1.499s] -- Looking for pthread.h - found
+[1.500s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.596s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.596s] -- Looking for pthread_create in pthreads
+[1.671s] -- Looking for pthread_create in pthreads - not found
+[1.671s] -- Looking for pthread_create in pthread
+[1.760s] -- Looking for pthread_create in pthread - found
+[1.762s] -- Found Threads: TRUE  
+[2.029s] -- Found ecl_build: 1.0.2 (/opt/ros/galactic/share/ecl_build/cmake)
+[2.040s] -- Found ecl_errors: 1.1.0 (/opt/ros/galactic/share/ecl_errors/cmake)
+[2.051s] -- Found ecl_exceptions: 1.2.0 (/opt/ros/galactic/share/ecl_exceptions/cmake)
+[2.058s] -- Found ecl_geometry: 1.2.0 (/opt/ros/galactic/share/ecl_geometry/cmake)
+[2.146s] -- Found ecl_sigslots: 1.2.0 (/opt/ros/galactic/share/ecl_sigslots/cmake)
+[2.155s] -- Check if compiler accepts -pthread
+[2.249s] -- Check if compiler accepts -pthread - yes
+[2.277s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[2.338s] -- Found kobuki_core: 1.3.1 (/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake)
+[2.382s] -- Found kobuki_ros_interfaces: 1.0.0 (/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/cmake)
+[2.659s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[2.833s] -- Found rclcpp_components: 9.2.1 (/opt/ros/galactic/share/rclcpp_components/cmake)
+[2.957s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[3.214s] -- Found tf2: 0.17.3 (/opt/ros/galactic/share/tf2/cmake)
+[3.231s] -- Found tf2_ros: 0.17.3 (/opt/ros/galactic/share/tf2_ros/cmake)
+[3.923s] -- Configuring done
+[4.005s] -- Generating done
+[4.012s] -- Build files have been written to: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node
+[4.050s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node
+[4.052s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node -- -j4 -l4
+[4.242s] [35m[1mScanning dependencies of target kobuki_ros[0m
+[4.265s] [35m[1mScanning dependencies of target kobuki_ros_node[0m
+[4.438s] [ 16%] [32mBuilding CXX object CMakeFiles/kobuki_ros_node.dir/rclcpp_components/node_main_kobuki_ros_node.cpp.o[0m
+[4.606s] [ 33%] [32mBuilding CXX object CMakeFiles/kobuki_ros.dir/src/diagnostics.cpp.o[0m
+[4.659s] [ 50%] [32mBuilding CXX object CMakeFiles/kobuki_ros.dir/src/kobuki_ros.cpp.o[0m
+[12.821s] [ 66%] [32m[1mLinking CXX executable kobuki_ros_node[0m
+[13.130s] [ 66%] Built target kobuki_ros_node
+[56.257s] [ 83%] [32mBuilding CXX object CMakeFiles/kobuki_ros.dir/src/odometry.cpp.o[0m
+[59.408s] [100%] [32m[1mLinking CXX shared library libkobuki_ros.so[0m
+[61.670s] [100%] Built target kobuki_ros
+[61.680s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node -- -j4 -l4
+[61.705s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node
+[61.712s] -- Install configuration: ""
+[61.712s] -- Execute custom install script
+[61.713s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/kobuki_node/kobuki_ros_node
+[61.721s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/libkobuki_ros.so
+[61.728s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/include/kobuki_node/diagnostics.hpp
+[61.736s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/include/kobuki_node/kobuki_ros.hpp
+[61.743s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/include/kobuki_node/odometry.hpp
+[61.751s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/config/kobuki_node_params.yaml
+[61.759s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/launch/kobuki_node-composed-launch.py
+[61.766s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/launch/kobuki_node-launch.py
+[61.774s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/package_run_dependencies/kobuki_node
+[61.781s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/parent_prefix_path/kobuki_node
+[61.789s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/ament_prefix_path.sh
+[61.797s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/ament_prefix_path.dsv
+[61.804s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/path.sh
+[61.812s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/path.dsv
+[61.820s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.bash
+[61.827s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.sh
+[61.835s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.zsh
+[61.842s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.dsv
+[61.850s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.dsv
+[61.857s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/packages/kobuki_node
+[61.865s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/rclcpp_components/kobuki_node
+[61.872s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/cmake/kobuki_nodeConfig.cmake
+[61.880s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/cmake/kobuki_nodeConfig-version.cmake
+[61.887s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.xml
+[61.898s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node

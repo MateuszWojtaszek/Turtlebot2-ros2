@@ -1,0 +1,1 @@
+/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

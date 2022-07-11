@@ -1,0 +1,988 @@
+[0.123s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.123s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f0ee8ec1ca0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f0ee8ec1ca0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f0ee8ec6250>)
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.148s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.149s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.149s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.159s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['ignore', 'ignore_ament_install']
+[0.160s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ignore'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ignore_ament_install'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['colcon_pkg']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'colcon_pkg'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['colcon_meta']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'colcon_meta'
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['ros']
+[0.161s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ros'
+[0.163s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cmd_vel_mux' with type 'ros.ament_cmake' and name 'cmd_vel_mux'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'ros'
+[0.164s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_core' with type 'ros.ament_cmake' and name 'kobuki_core'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'ros'
+[0.167s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_auto_docking' with type 'ros.ament_cmake' and name 'kobuki_auto_docking'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['ignore', 'ignore_ament_install']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'ros'
+[0.168s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_bumper2pc' with type 'ros.ament_cmake' and name 'kobuki_bumper2pc'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_controller_tutorial) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_controller_tutorial) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_controller_tutorial) ignored
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['ignore', 'ignore_ament_install']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'ignore'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'ignore_ament_install'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['colcon_pkg']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'colcon_pkg'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['colcon_meta']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'colcon_meta'
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['ros']
+[0.168s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_description' with type 'ros.ament_cmake' and name 'kobuki_description'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'ros'
+[0.170s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_keyop' with type 'ros.ament_cmake' and name 'kobuki_keyop'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['ignore', 'ignore_ament_install']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'ignore'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'ignore_ament_install'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['colcon_pkg']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'colcon_pkg'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['colcon_meta']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'colcon_meta'
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['ros']
+[0.170s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'ros'
+[0.172s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_node' with type 'ros.ament_cmake' and name 'kobuki_node'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['ignore', 'ignore_ament_install']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'ignore'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'ignore_ament_install'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['colcon_pkg']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'colcon_pkg'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['colcon_meta']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'colcon_meta'
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['ros']
+[0.172s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'ros'
+[0.173s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_random_walker' with type 'ros.ament_cmake' and name 'kobuki_random_walker'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'ros'
+[0.174s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_ros' with type 'ros.ament_cmake' and name 'kobuki_ros'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'ignore'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'ignore_ament_install'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['colcon_pkg']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'colcon_pkg'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['colcon_meta']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'colcon_meta'
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['ros']
+[0.174s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'ros'
+[0.175s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_safety_controller' with type 'ros.ament_cmake' and name 'kobuki_safety_controller'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_testsuite) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_testsuite) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_testsuite) ignored
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'ignore'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'ignore_ament_install'
+[0.175s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'colcon_pkg'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['colcon_meta']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'colcon_meta'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['ros']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'ros'
+[0.176s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros_interfaces' with type 'ros.ament_cmake' and name 'kobuki_ros_interfaces'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['ignore', 'ignore_ament_install']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'ignore'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'ignore_ament_install'
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['colcon_pkg']
+[0.176s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'colcon_pkg'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['colcon_meta']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'colcon_meta'
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['ros']
+[0.177s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'ros'
+[0.177s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velocity_smoother' with type 'ros.ament_cmake' and name 'velocity_smoother'
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.177s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 423 installed packages in /opt/ros/galactic
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_target' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_clean_cache' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_clean_first' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_force_configure' from command line to 'False'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'ament_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'catkin_cmake_args' from command line to 'None'
+[0.295s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.295s] DEBUG:colcon.colcon_core.verb:Building package 'cmd_vel_mux' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux', 'symlink_install': True, 'test_result_base': None}
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_target' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_clean_cache' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_clean_first' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_force_configure' from command line to 'False'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'ament_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'catkin_cmake_args' from command line to 'None'
+[0.296s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.296s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_core', 'symlink_install': True, 'test_result_base': None}
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_target' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.297s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.297s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description', 'symlink_install': True, 'test_result_base': None}
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.298s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.298s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_ros_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces', 'symlink_install': True, 'test_result_base': None}
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_target' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_clean_cache' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_clean_first' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_force_configure' from command line to 'False'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'ament_cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'catkin_cmake_args' from command line to 'None'
+[0.299s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.299s] DEBUG:colcon.colcon_core.verb:Building package 'velocity_smoother' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/velocity_smoother', 'symlink_install': True, 'test_result_base': None}
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_target' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_clean_first' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_force_configure' from command line to 'False'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'ament_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.300s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_auto_docking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking', 'symlink_install': True, 'test_result_base': None}
+[0.300s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_target' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_clean_cache' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_clean_first' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_force_configure' from command line to 'False'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'ament_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'catkin_cmake_args' from command line to 'None'
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.301s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_bumper2pc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc', 'symlink_install': True, 'test_result_base': None}
+[0.301s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_target' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_clean_first' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_force_configure' from command line to 'False'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'ament_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.302s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_keyop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop', 'symlink_install': True, 'test_result_base': None}
+[0.302s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_target' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.303s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node', 'symlink_install': True, 'test_result_base': None}
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_args' from command line to 'None'
+[0.303s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_clean_first' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_force_configure' from command line to 'False'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'ament_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.304s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_random_walker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker', 'symlink_install': True, 'test_result_base': None}
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_args' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_target' from command line to 'None'
+[0.304s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.305s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_safety_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller', 'symlink_install': True, 'test_result_base': None}
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_args' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_target' from command line to 'None'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.305s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.306s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.306s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros', 'merge_install': False, 'path': '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_ros', 'symlink_install': True, 'test_result_base': None}
+[0.306s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.310s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.310s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces' with build type 'ament_cmake'
+[0.310s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces'
+[0.314s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.315s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.315s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.319s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_core' with build type 'ament_cmake'
+[0.320s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_core'
+[0.321s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.322s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.327s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux' with build type 'ament_cmake'
+[0.327s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux'
+[0.329s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.334s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/velocity_smoother' with build type 'ament_cmake'
+[0.334s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/velocity_smoother'
+[0.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.336s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.347s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces
+[0.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core
+[0.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux
+[0.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/velocity_smoother -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother
+[1.919s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core
+[1.920s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core -- -j4 -l4
+[3.007s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux
+[3.008s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j4 -l4
+[3.152s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/velocity_smoother -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother
+[3.153s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother -- -j4 -l4
+[3.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces
+[3.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces -- -j4 -l4
+[35.110s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j4 -l4
+[35.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux
+[35.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel_mux)
+[35.465s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake module files
+[35.466s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake config files
+[35.467s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'cmake_prefix_path')
+[35.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.ps1'
+[35.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux
+[35.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.dsv'
+[35.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.sh'
+[35.472s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib'
+[35.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'ld_library_path_lib')
+[35.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.ps1'
+[35.475s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.dsv'
+[35.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.sh'
+[35.475s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[35.476s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/pkgconfig/cmd_vel_mux.pc'
+[35.476s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/python3.8/site-packages'
+[35.476s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[35.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.ps1'
+[35.480s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv'
+[35.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.sh'
+[35.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.bash'
+[35.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.zsh'
+[35.483s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/colcon-core/packages/cmd_vel_mux)
+[35.521s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel_mux)
+[35.524s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake module files
+[35.525s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake config files
+[35.526s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'cmake_prefix_path')
+[35.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.ps1'
+[35.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.dsv'
+[35.530s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.sh'
+[35.531s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib'
+[35.531s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'ld_library_path_lib')
+[35.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.ps1'
+[35.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.dsv'
+[35.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.sh'
+[35.535s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[35.535s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/pkgconfig/cmd_vel_mux.pc'
+[35.536s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/python3.8/site-packages'
+[35.536s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[35.538s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.ps1'
+[35.539s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv'
+[35.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.sh'
+[35.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.bash'
+[35.541s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.zsh'
+[35.542s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/colcon-core/packages/cmd_vel_mux)
+[35.544s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description' with build type 'ament_cmake'
+[35.544s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description'
+[35.546s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[35.547s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[35.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description
+[36.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description
+[36.436s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description -- -j4 -l4
+[36.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description -- -j4 -l4
+[36.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description
+[36.854s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_description)
+[36.857s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake module files
+[36.858s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake config files
+[36.858s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_description', 'cmake_prefix_path')
+[36.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.ps1'
+[36.861s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description
+[36.861s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.dsv'
+[36.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.sh'
+[36.862s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[36.863s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/pkgconfig/kobuki_description.pc'
+[36.863s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/python3.8/site-packages'
+[36.863s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[36.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.ps1'
+[36.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.dsv'
+[36.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.sh'
+[36.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.bash'
+[36.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.zsh'
+[36.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/colcon-core/packages/kobuki_description)
+[36.894s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_description)
+[36.896s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake module files
+[36.897s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake config files
+[36.897s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_description', 'cmake_prefix_path')
+[36.898s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.ps1'
+[36.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.dsv'
+[36.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.sh'
+[36.900s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[36.900s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/pkgconfig/kobuki_description.pc'
+[36.900s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/python3.8/site-packages'
+[36.900s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[36.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.ps1'
+[36.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.dsv'
+[36.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.sh'
+[36.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.bash'
+[36.903s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.zsh'
+[36.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/colcon-core/packages/kobuki_description)
+[36.906s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother -- -j4 -l4
+[36.929s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother
+[37.129s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velocity_smoother)
+[37.131s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake module files
+[37.132s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother
+[37.132s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake config files
+[37.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'cmake_prefix_path')
+[37.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.ps1'
+[37.134s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.dsv'
+[37.134s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.sh'
+[37.135s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib'
+[37.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'ld_library_path_lib')
+[37.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.ps1'
+[37.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.dsv'
+[37.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.sh'
+[37.137s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[37.138s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/pkgconfig/velocity_smoother.pc'
+[37.138s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/python3.8/site-packages'
+[37.138s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[37.139s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.ps1'
+[37.140s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.dsv'
+[37.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.sh'
+[37.140s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.bash'
+[37.141s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.zsh'
+[37.141s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/colcon-core/packages/velocity_smoother)
+[37.164s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velocity_smoother)
+[37.166s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake module files
+[37.166s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake config files
+[37.167s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'cmake_prefix_path')
+[37.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.ps1'
+[37.168s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.dsv'
+[37.169s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.sh'
+[37.169s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib'
+[37.169s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'ld_library_path_lib')
+[37.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.ps1'
+[37.171s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.dsv'
+[37.171s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.sh'
+[37.171s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[37.171s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/pkgconfig/velocity_smoother.pc'
+[37.172s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/python3.8/site-packages'
+[37.172s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[37.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.ps1'
+[37.174s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.dsv'
+[37.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.sh'
+[37.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.bash'
+[37.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.zsh'
+[37.175s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/colcon-core/packages/velocity_smoother)
+[47.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core -- -j4 -l4
+[47.773s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core
+[48.269s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_core)
+[48.271s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake module files
+[48.271s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_core
+[48.272s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake config files
+[48.272s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'cmake_prefix_path')
+[48.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.ps1'
+[48.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.dsv'
+[48.274s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.sh'
+[48.274s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib'
+[48.274s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'ld_library_path_lib')
+[48.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.ps1'
+[48.276s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.dsv'
+[48.276s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.sh'
+[48.276s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[48.277s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'path')
+[48.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.ps1'
+[48.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.dsv'
+[48.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.sh'
+[48.278s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/pkgconfig/kobuki_core.pc'
+[48.279s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/python3.8/site-packages'
+[48.279s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[48.279s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'pythonscriptspath')
+[48.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.ps1'
+[48.280s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.dsv'
+[48.281s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.sh'
+[48.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.ps1'
+[48.283s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.dsv'
+[48.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.sh'
+[48.283s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.bash'
+[48.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.zsh'
+[48.284s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/colcon-core/packages/kobuki_core)
+[48.308s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_core)
+[48.310s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake module files
+[48.310s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake config files
+[48.311s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'cmake_prefix_path')
+[48.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.ps1'
+[48.312s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.dsv'
+[48.313s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.sh'
+[48.313s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib'
+[48.313s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'ld_library_path_lib')
+[48.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.ps1'
+[48.315s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.dsv'
+[48.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.sh'
+[48.315s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[48.315s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'path')
+[48.316s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.ps1'
+[48.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.dsv'
+[48.317s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.sh'
+[48.317s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/pkgconfig/kobuki_core.pc'
+[48.317s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/python3.8/site-packages'
+[48.318s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[48.318s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'pythonscriptspath')
+[48.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.ps1'
+[48.319s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.dsv'
+[48.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.sh'
+[48.321s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.ps1'
+[48.321s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.dsv'
+[48.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.sh'
+[48.322s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.bash'
+[48.323s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.zsh'
+[48.323s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/colcon-core/packages/kobuki_core)
+[50.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces -- -j4 -l4
+[50.273s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces
+[52.890s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_ros_interfaces)
+[52.892s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake module files
+[52.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces
+[52.893s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake config files
+[52.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'cmake_prefix_path')
+[52.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.ps1'
+[52.895s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.dsv'
+[52.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.sh'
+[52.896s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib'
+[52.896s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'ld_library_path_lib')
+[52.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.ps1'
+[52.897s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.dsv'
+[52.897s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.sh'
+[52.898s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[52.898s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/pkgconfig/kobuki_ros_interfaces.pc'
+[52.898s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages'
+[52.898s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'pythonpath')
+[52.899s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.ps1'
+[52.899s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.dsv'
+[52.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.sh'
+[52.900s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[52.901s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.ps1'
+[52.902s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.dsv'
+[52.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.sh'
+[52.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.bash'
+[52.902s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.zsh'
+[52.903s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/colcon-core/packages/kobuki_ros_interfaces)
+[53.139s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_ros_interfaces)
+[53.141s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake module files
+[53.142s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake config files
+[53.142s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'cmake_prefix_path')
+[53.143s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.ps1'
+[53.144s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.dsv'
+[53.144s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.sh'
+[53.144s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib'
+[53.144s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'ld_library_path_lib')
+[53.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.ps1'
+[53.146s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.dsv'
+[53.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.sh'
+[53.146s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[53.146s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/pkgconfig/kobuki_ros_interfaces.pc'
+[53.146s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages'
+[53.147s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'pythonpath')
+[53.148s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.ps1'
+[53.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.dsv'
+[53.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.sh'
+[53.149s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[53.150s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.ps1'
+[53.151s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.dsv'
+[53.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.sh'
+[53.151s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.bash'
+[53.152s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.zsh'
+[53.152s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/colcon-core/packages/kobuki_ros_interfaces)
+[53.153s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking' with build type 'ament_cmake'
+[53.153s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking'
+[53.154s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[53.154s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[53.160s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc' with build type 'ament_cmake'
+[53.160s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc'
+[53.162s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[53.162s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[53.167s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop' with build type 'ament_cmake'
+[53.168s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop'
+[53.170s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[53.170s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[53.175s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node' with build type 'ament_cmake'
+[53.176s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node'
+[53.177s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[53.177s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[53.188s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking
+[53.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc
+[53.200s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop
+[53.208s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node
+[55.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop
+[55.724s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop -- -j4 -l4
+[55.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc
+[55.805s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc -- -j4 -l4
+[56.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking
+[56.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking -- -j4 -l4
+[57.227s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node
+[57.228s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node -- -j4 -l4
+[72.199s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop -- -j4 -l4
+[72.237s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop
+[72.507s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_keyop)
+[72.510s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake module files
+[72.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop
+[72.512s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake config files
+[72.512s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'cmake_prefix_path')
+[72.515s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.ps1'
+[72.515s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.dsv'
+[72.516s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.sh'
+[72.517s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib'
+[72.517s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'ld_library_path_lib')
+[72.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.ps1'
+[72.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.dsv'
+[72.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.sh'
+[72.520s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[72.520s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/pkgconfig/kobuki_keyop.pc'
+[72.521s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/python3.8/site-packages'
+[72.521s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[72.523s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.ps1'
+[72.524s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.dsv'
+[72.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.sh'
+[72.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.bash'
+[72.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.zsh'
+[72.527s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/colcon-core/packages/kobuki_keyop)
+[72.565s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_keyop)
+[72.569s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake module files
+[72.569s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake config files
+[72.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'cmake_prefix_path')
+[72.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.ps1'
+[72.573s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.dsv'
+[72.573s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.sh'
+[72.574s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib'
+[72.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'ld_library_path_lib')
+[72.576s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.ps1'
+[72.577s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.dsv'
+[72.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.sh'
+[72.578s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[72.578s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/pkgconfig/kobuki_keyop.pc'
+[72.578s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/python3.8/site-packages'
+[72.579s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[72.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.ps1'
+[72.582s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.dsv'
+[72.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.sh'
+[72.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.bash'
+[72.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.zsh'
+[72.584s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/colcon-core/packages/kobuki_keyop)
+[72.586s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker' with build type 'ament_cmake'
+[72.586s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker'
+[72.588s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[72.588s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[72.609s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker
+[74.960s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker
+[74.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker -- -j4 -l4
+[75.404s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc -- -j4 -l4
+[75.446s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc
+[75.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_bumper2pc)
+[75.721s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake module files
+[75.722s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake config files
+[75.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'cmake_prefix_path')
+[75.725s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.ps1'
+[75.725s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.dsv'
+[75.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.sh'
+[75.727s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib'
+[75.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'ld_library_path_lib')
+[75.729s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.ps1'
+[75.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc
+[75.730s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.dsv'
+[75.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.sh'
+[75.731s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[75.731s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/pkgconfig/kobuki_bumper2pc.pc'
+[75.732s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/python3.8/site-packages'
+[75.732s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[75.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.ps1'
+[75.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.dsv'
+[75.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.sh'
+[75.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.bash'
+[75.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.zsh'
+[75.737s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/colcon-core/packages/kobuki_bumper2pc)
+[75.776s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_bumper2pc)
+[75.779s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake module files
+[75.780s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake config files
+[75.781s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'cmake_prefix_path')
+[75.783s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.ps1'
+[75.783s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.dsv'
+[75.784s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.sh'
+[75.785s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib'
+[75.785s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'ld_library_path_lib')
+[75.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.ps1'
+[75.788s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.dsv'
+[75.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.sh'
+[75.789s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[75.789s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/pkgconfig/kobuki_bumper2pc.pc'
+[75.789s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/python3.8/site-packages'
+[75.789s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[75.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.ps1'
+[75.793s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.dsv'
+[75.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.sh'
+[75.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.bash'
+[75.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.zsh'
+[75.795s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/colcon-core/packages/kobuki_bumper2pc)
+[75.797s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller' with build type 'ament_cmake'
+[75.797s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller'
+[75.799s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[75.799s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[75.822s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller
+[78.298s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller
+[78.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller -- -j4 -l4
+[95.843s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking -- -j4 -l4
+[95.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking
+[96.205s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_auto_docking)
+[96.208s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking' for CMake module files
+[96.209s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking' for CMake config files
+[96.210s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_auto_docking', 'cmake_prefix_path')
+[96.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/cmake_prefix_path.ps1'
+[96.213s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/cmake_prefix_path.dsv'
+[96.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/cmake_prefix_path.sh'
+[96.214s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib'
+[96.214s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_auto_docking', 'ld_library_path_lib')
+[96.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/ld_library_path_lib.ps1'
+[96.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking
+[96.218s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/ld_library_path_lib.dsv'
+[96.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/ld_library_path_lib.sh'
+[96.219s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/bin'
+[96.219s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib/pkgconfig/kobuki_auto_docking.pc'
+[96.219s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib/python3.8/site-packages'
+[96.219s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/bin'
+[96.222s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.ps1'
+[96.223s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.dsv'
+[96.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.sh'
+[96.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.bash'
+[96.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.zsh'
+[96.225s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/colcon-core/packages/kobuki_auto_docking)
+[96.266s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_auto_docking)
+[96.270s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking' for CMake module files
+[96.270s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking' for CMake config files
+[96.271s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_auto_docking', 'cmake_prefix_path')
+[96.273s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/cmake_prefix_path.ps1'
+[96.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/cmake_prefix_path.dsv'
+[96.275s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/cmake_prefix_path.sh'
+[96.276s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib'
+[96.276s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_auto_docking', 'ld_library_path_lib')
+[96.278s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/ld_library_path_lib.ps1'
+[96.278s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/ld_library_path_lib.dsv'
+[96.279s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/hook/ld_library_path_lib.sh'
+[96.279s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/bin'
+[96.280s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib/pkgconfig/kobuki_auto_docking.pc'
+[96.280s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib/python3.8/site-packages'
+[96.280s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/bin'
+[96.282s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.ps1'
+[96.283s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.dsv'
+[96.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.sh'
+[96.284s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.bash'
+[96.285s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/kobuki_auto_docking/package.zsh'
+[96.285s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/share/colcon-core/packages/kobuki_auto_docking)
+[99.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker -- -j4 -l4
+[99.412s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker
+[99.602s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_random_walker)
+[99.604s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake module files
+[99.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker
+[99.605s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake config files
+[99.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'cmake_prefix_path')
+[99.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.ps1'
+[99.607s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.dsv'
+[99.607s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.sh'
+[99.608s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib'
+[99.608s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'ld_library_path_lib')
+[99.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.ps1'
+[99.609s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.dsv'
+[99.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.sh'
+[99.610s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[99.610s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/pkgconfig/kobuki_random_walker.pc'
+[99.610s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/python3.8/site-packages'
+[99.611s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[99.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.ps1'
+[99.612s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.dsv'
+[99.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.sh'
+[99.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.bash'
+[99.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.zsh'
+[99.614s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/colcon-core/packages/kobuki_random_walker)
+[99.638s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_random_walker)
+[99.640s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake module files
+[99.641s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake config files
+[99.641s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'cmake_prefix_path')
+[99.642s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.ps1'
+[99.643s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.dsv'
+[99.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.sh'
+[99.644s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib'
+[99.644s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'ld_library_path_lib')
+[99.645s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.ps1'
+[99.646s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.dsv'
+[99.646s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.sh'
+[99.646s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[99.646s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/pkgconfig/kobuki_random_walker.pc'
+[99.647s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/python3.8/site-packages'
+[99.647s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[99.648s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.ps1'
+[99.649s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.dsv'
+[99.649s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.sh'
+[99.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.bash'
+[99.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.zsh'
+[99.650s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/colcon-core/packages/kobuki_random_walker)
+[102.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller -- -j4 -l4
+[102.248s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller
+[102.429s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_safety_controller)
+[102.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller
+[102.432s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake module files
+[102.432s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake config files
+[102.432s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'cmake_prefix_path')
+[102.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.ps1'
+[102.434s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.dsv'
+[102.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.sh'
+[102.435s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib'
+[102.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'ld_library_path_lib')
+[102.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.ps1'
+[102.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.dsv'
+[102.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.sh'
+[102.437s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[102.437s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/pkgconfig/kobuki_safety_controller.pc'
+[102.437s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/python3.8/site-packages'
+[102.437s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[102.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.ps1'
+[102.439s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.dsv'
+[102.439s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.sh'
+[102.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.bash'
+[102.440s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.zsh'
+[102.440s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/colcon-core/packages/kobuki_safety_controller)
+[102.464s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_safety_controller)
+[102.465s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake module files
+[102.466s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake config files
+[102.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'cmake_prefix_path')
+[102.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.ps1'
+[102.468s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.dsv'
+[102.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.sh'
+[102.469s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib'
+[102.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'ld_library_path_lib')
+[102.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.ps1'
+[102.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.dsv'
+[102.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.sh'
+[102.471s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[102.471s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/pkgconfig/kobuki_safety_controller.pc'
+[102.471s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/python3.8/site-packages'
+[102.471s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[102.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.ps1'
+[102.473s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.dsv'
+[102.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.sh'
+[102.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.bash'
+[102.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.zsh'
+[102.474s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/colcon-core/packages/kobuki_safety_controller)
+[114.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node -- -j4 -l4
+[114.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node
+[115.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_node)
+[115.074s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node' for CMake module files
+[115.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node
+[115.075s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node' for CMake config files
+[115.075s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_node', 'cmake_prefix_path')
+[115.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/cmake_prefix_path.ps1'
+[115.076s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/cmake_prefix_path.dsv'
+[115.077s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/cmake_prefix_path.sh'
+[115.077s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib'
+[115.077s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_node', 'ld_library_path_lib')
+[115.078s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/ld_library_path_lib.ps1'
+[115.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/ld_library_path_lib.dsv'
+[115.079s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/ld_library_path_lib.sh'
+[115.079s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/bin'
+[115.079s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/pkgconfig/kobuki_node.pc'
+[115.079s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/python3.8/site-packages'
+[115.079s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/bin'
+[115.080s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.ps1'
+[115.081s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.dsv'
+[115.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.sh'
+[115.081s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.bash'
+[115.082s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.zsh'
+[115.082s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/colcon-core/packages/kobuki_node)
+[115.107s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_node)
+[115.108s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node' for CMake module files
+[115.109s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node' for CMake config files
+[115.109s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_node', 'cmake_prefix_path')
+[115.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/cmake_prefix_path.ps1'
+[115.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/cmake_prefix_path.dsv'
+[115.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/cmake_prefix_path.sh'
+[115.111s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib'
+[115.111s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_node', 'ld_library_path_lib')
+[115.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/ld_library_path_lib.ps1'
+[115.113s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/ld_library_path_lib.dsv'
+[115.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/hook/ld_library_path_lib.sh'
+[115.113s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/bin'
+[115.113s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/pkgconfig/kobuki_node.pc'
+[115.113s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/python3.8/site-packages'
+[115.114s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/bin'
+[115.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.ps1'
+[115.115s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.dsv'
+[115.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.sh'
+[115.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.bash'
+[115.116s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.zsh'
+[115.117s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/colcon-core/packages/kobuki_node)
+[115.117s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_ros' with build type 'ament_cmake'
+[115.117s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_ros'
+[115.118s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[115.118s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[115.138s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros
+[115.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros
+[115.671s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros -- -j4 -l4
+[115.707s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros -- -j4 -l4
+[115.726s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros
+[115.860s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_ros)
+[115.862s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros' for CMake module files
+[115.863s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros
+[115.863s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros' for CMake config files
+[115.863s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros', 'cmake_prefix_path')
+[115.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/hook/cmake_prefix_path.ps1'
+[115.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/hook/cmake_prefix_path.dsv'
+[115.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/hook/cmake_prefix_path.sh'
+[115.866s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/bin'
+[115.866s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/lib/pkgconfig/kobuki_ros.pc'
+[115.866s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/lib/python3.8/site-packages'
+[115.866s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/bin'
+[115.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.ps1'
+[115.867s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.dsv'
+[115.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.sh'
+[115.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.bash'
+[115.868s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.zsh'
+[115.869s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/colcon-core/packages/kobuki_ros)
+[115.887s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_ros)
+[115.888s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros' for CMake module files
+[115.889s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros' for CMake config files
+[115.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros', 'cmake_prefix_path')
+[115.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/hook/cmake_prefix_path.ps1'
+[115.890s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/hook/cmake_prefix_path.dsv'
+[115.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/hook/cmake_prefix_path.sh'
+[115.891s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/bin'
+[115.891s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/lib/pkgconfig/kobuki_ros.pc'
+[115.891s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/lib/python3.8/site-packages'
+[115.892s] Level 1:colcon.colcon_core.environment:checking '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/bin'
+[115.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.ps1'
+[115.893s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.dsv'
+[115.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.sh'
+[115.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.bash'
+[115.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/kobuki_ros/package.zsh'
+[115.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros/share/colcon-core/packages/kobuki_ros)
+[115.895s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[115.895s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[115.895s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[115.895s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[115.901s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[115.901s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[115.901s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[115.917s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[115.919s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/local_setup.ps1'
+[115.920s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/_local_setup_util_ps1.py'
+[115.921s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/setup.ps1'
+[115.922s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/local_setup.sh'
+[115.923s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/_local_setup_util_sh.py'
+[115.923s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/setup.sh'
+[115.924s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/local_setup.bash'
+[115.925s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/setup.bash'
+[115.926s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/local_setup.zsh'
+[115.927s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/setup.zsh'

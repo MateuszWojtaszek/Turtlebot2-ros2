@@ -1,0 +1,80 @@
+[0.023s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker
+[0.100s] -- The C compiler identification is GNU 9.4.0
+[0.173s] -- The CXX compiler identification is GNU 9.4.0
+[0.180s] -- Check for working C compiler: /usr/bin/cc
+[0.268s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.270s] -- Detecting C compiler ABI info
+[0.355s] -- Detecting C compiler ABI info - done
+[0.372s] -- Detecting C compile features
+[0.373s] -- Detecting C compile features - done
+[0.376s] -- Check for working CXX compiler: /usr/bin/c++
+[0.475s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.476s] -- Detecting CXX compiler ABI info
+[0.577s] -- Detecting CXX compiler ABI info - done
+[0.595s] -- Detecting CXX compile features
+[0.596s] -- Detecting CXX compile features - done
+[0.599s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[0.640s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.641s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.714s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.752s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[0.795s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.806s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.913s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[0.956s] -- Found FastRTPS: /opt/ros/galactic/include  
+[1.069s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.200s] -- Found kobuki_ros_interfaces: 1.0.0 (/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/cmake)
+[1.441s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.516s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[1.519s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[1.548s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.549s] -- Looking for pthread.h
+[1.636s] -- Looking for pthread.h - found
+[1.637s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.729s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.729s] -- Looking for pthread_create in pthreads
+[1.800s] -- Looking for pthread_create in pthreads - not found
+[1.801s] -- Looking for pthread_create in pthread
+[1.886s] -- Looking for pthread_create in pthread - found
+[1.888s] -- Found Threads: TRUE  
+[2.128s] -- Found rclcpp_components: 9.2.1 (/opt/ros/galactic/share/rclcpp_components/cmake)
+[2.334s] -- Configuring done
+[2.356s] -- Generating done
+[2.358s] -- Build files have been written to: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker
+[2.374s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker
+[2.375s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker -- -j4 -l4
+[2.434s] [35m[1mScanning dependencies of target kobuki_random_walker[0m
+[2.496s] [ 25%] [32mBuilding CXX object CMakeFiles/kobuki_random_walker.dir/src/random_walker.cpp.o[0m
+[23.298s] [ 50%] [32m[1mLinking CXX shared library libkobuki_random_walker.so[0m
+[24.165s] [ 50%] Built target kobuki_random_walker
+[24.174s] [35m[1mScanning dependencies of target kobuki_random_walker_node[0m
+[24.207s] [ 75%] [32mBuilding CXX object CMakeFiles/kobuki_random_walker_node.dir/rclcpp_components/node_main_kobuki_random_walker_node.cpp.o[0m
+[26.670s] [100%] [32m[1mLinking CXX executable kobuki_random_walker_node[0m
+[26.792s] [100%] Built target kobuki_random_walker_node
+[26.801s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker -- -j4 -l4
+[26.826s] Invoking command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker
+[26.834s] -- Install configuration: ""
+[26.835s] -- Execute custom install script
+[26.835s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/kobuki_random_walker/kobuki_random_walker_node
+[26.844s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/libkobuki_random_walker.so
+[26.853s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/include/kobuki_random_walker/random_walker.hpp
+[26.861s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/launch/random_walker_app.launch
+[26.869s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/launch/safe_random_walker_app.launch
+[26.877s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/launch/standalone.launch
+[26.885s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/ament_index/resource_index/package_run_dependencies/kobuki_random_walker
+[26.893s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/ament_index/resource_index/parent_prefix_path/kobuki_random_walker
+[26.901s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/ament_prefix_path.sh
+[26.909s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/ament_prefix_path.dsv
+[26.917s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/path.sh
+[26.926s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/environment/path.dsv
+[26.934s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.bash
+[26.942s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.sh
+[26.950s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.zsh
+[26.959s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/local_setup.dsv
+[26.967s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.dsv
+[26.975s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/ament_index/resource_index/packages/kobuki_random_walker
+[26.983s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/ament_index/resource_index/rclcpp_components/kobuki_random_walker
+[26.991s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/cmake/kobuki_random_walkerConfig.cmake
+[26.999s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/cmake/kobuki_random_walkerConfig-version.cmake
+[27.007s] -- Symlinking: /home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.xml
+[27.019s] Invoked command in '/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/turtlebot5/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker
