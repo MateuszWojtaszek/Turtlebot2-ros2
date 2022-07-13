@@ -1,0 +1,15 @@
+[submodule "ros2_ws/src/kobuki_core"]
+	path = ros2_ws/src/kobuki_core
+	url = https://github.com/kobuki-base/kobuki_core.git
+[submodule "ros2_ws/src/velocity_smoother"]
+	path = ros2_ws/src/velocity_smoother
+	url = https://github.com/kobuki-base/velocity_smoother.git
+[submodule "ros2_ws/src/cmd_vel_mux"]
+	path = ros2_ws/src/cmd_vel_mux
+	url = https://github.com/kobuki-base/cmd_vel_mux.git
+[submodule "ros2_ws/src/kobuki_ros_interfaces"]
+	path = ros2_ws/src/kobuki_ros_interfaces
+	url = https://github.com/kobuki-base/kobuki_ros_interfaces.git
+[submodule "ros2_ws/src/kobuki_ros"]
+	path = ros2_ws/src/kobuki_ros
+	url = https://github.com/kobuki-base/kobuki_ros.git

@@ -1,1 +1,0 @@
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

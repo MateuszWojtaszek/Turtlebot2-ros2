@@ -1,0 +1,32 @@
+[35m[1mScanning dependencies of target cmd_vel_mux[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/cmd_vel_mux.dir/src/cmd_vel_mux.cpp.o[0m
+[ 50%] [32m[1mLinking CXX shared library libcmd_vel_mux.so[0m
+[ 50%] Built target cmd_vel_mux
+[35m[1mScanning dependencies of target cmd_vel_mux_node[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/cmd_vel_mux_node.dir/src/cmd_vel_mux_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable cmd_vel_mux_node[0m
+[100%] Built target cmd_vel_mux_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/libcmd_vel_mux.so
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/include/cmd_vel_mux/cmd_vel_mux.hpp
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/cmd_vel_mux/cmd_vel_mux_node
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/config/cmd_vel_mux_params.yaml
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-composed-launch.py
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/launch/cmd_vel_mux-launch.py
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/package_run_dependencies/cmd_vel_mux
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/parent_prefix_path/cmd_vel_mux
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.sh
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/ament_prefix_path.dsv
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.sh
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/environment/path.dsv
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.bash
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.sh
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.zsh
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/local_setup.dsv
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/packages/cmd_vel_mux
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/ament_index/resource_index/rclcpp_components/cmd_vel_mux
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig.cmake
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/cmake/cmd_vel_muxConfig-version.cmake
+-- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.xml

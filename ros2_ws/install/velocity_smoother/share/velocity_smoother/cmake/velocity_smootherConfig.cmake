@@ -1,1 +1,0 @@
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/velocity_smoother/ament_cmake_core/velocity_smootherConfig.cmake

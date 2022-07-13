@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_node/libkobuki_ros.so" "TARGETS" "kobuki_ros" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

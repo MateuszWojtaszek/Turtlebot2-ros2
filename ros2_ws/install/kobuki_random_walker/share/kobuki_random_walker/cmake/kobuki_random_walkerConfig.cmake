@@ -1,1 +1,0 @@
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker/ament_cmake_core/kobuki_random_walkerConfig.cmake

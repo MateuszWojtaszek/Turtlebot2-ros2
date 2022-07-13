@@ -1,9 +1,0 @@
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/install/strip.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/install/local.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/install.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/list_install_components.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/rebuild_cache.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/edit_cache.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/test.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/kobuki_description_uninstall.dir
-/home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/kobuki_description/CMakeFiles/uninstall.dir

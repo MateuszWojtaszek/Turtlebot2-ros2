@@ -1,0 +1,2 @@
+Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j16 -l16
+Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j16 -l16
