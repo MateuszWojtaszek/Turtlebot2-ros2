@@ -1,0 +1,204 @@
+[0.033s] Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core
+[0.140s] -- The C compiler identification is GNU 9.4.0
+[0.322s] -- The CXX compiler identification is GNU 9.4.0
+[0.389s] -- Check for working C compiler: /usr/bin/cc
+[0.508s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.509s] -- Detecting C compiler ABI info
+[0.635s] -- Detecting C compiler ABI info - done
+[0.649s] -- Detecting C compile features
+[0.649s] -- Detecting C compile features - done
+[0.652s] -- Check for working CXX compiler: /usr/bin/c++
+[0.787s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.788s] -- Detecting CXX compiler ABI info
+[0.905s] -- Detecting CXX compiler ABI info - done
+[0.914s] -- Detecting CXX compile features
+[0.914s] -- Detecting CXX compile features - done
+[0.916s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[0.942s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.943s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.000s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.017s] -- Found ecl_build: 1.0.2 (/opt/ros/galactic/share/ecl_build/cmake)
+[1.024s] -- Found ecl_command_line: 1.2.0 (/opt/ros/galactic/share/ecl_command_line/cmake)
+[1.026s] -- Found ecl_config: 1.1.0 (/opt/ros/galactic/share/ecl_config/cmake)
+[1.029s] -- Found ecl_console: 1.1.0 (/opt/ros/galactic/share/ecl_console/cmake)
+[1.031s] -- Found ecl_converters: 1.2.0 (/opt/ros/galactic/share/ecl_converters/cmake)
+[1.050s] -- Found ecl_devices: 1.2.0 (/opt/ros/galactic/share/ecl_devices/cmake)
+[1.067s] -- Looking for pthread.h
+[1.207s] -- Looking for pthread.h - found
+[1.207s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.332s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[1.332s] -- Looking for pthread_create in pthreads
+[1.444s] -- Looking for pthread_create in pthreads - not found
+[1.444s] -- Looking for pthread_create in pthread
+[1.572s] -- Looking for pthread_create in pthread - found
+[1.577s] -- Found Threads: TRUE  
+[1.582s] -- Check if compiler accepts -pthread
+[1.734s] -- Check if compiler accepts -pthread - yes
+[1.761s] -- Found ecl_geometry: 1.2.0 (/opt/ros/galactic/share/ecl_geometry/cmake)
+[1.798s] -- Found ecl_mobile_robot: 1.2.0 (/opt/ros/galactic/share/ecl_mobile_robot/cmake)
+[1.806s] -- Found ecl_sigslots: 1.2.0 (/opt/ros/galactic/share/ecl_sigslots/cmake)
+[1.903s] -- Configuring done
+[1.964s] -- Generating done
+[1.966s] -- Build files have been written to: /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core
+[1.972s] Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core
+[1.976s] Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core -- -j16 -l16
+[2.013s] [35m[1mScanning dependencies of target kobuki_core[0m
+[2.087s] [  2%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/battery.cpp.o[0m
+[2.095s] [ 11%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/core_sensors.cpp.o[0m
+[2.095s] [ 11%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/event_manager.cpp.o[0m
+[2.095s] [ 14%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/firmware.cpp.o[0m
+[2.095s] [ 14%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/diff_drive.cpp.o[0m
+[2.096s] [ 17%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/command.cpp.o[0m
+[2.096s] [ 20%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/dock_drive_states.cpp.o[0m
+[2.096s] [ 23%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/dock_drive_debug.cpp.o[0m
+[2.096s] [ 26%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/kobuki.cpp.o[0m
+[2.096s] [ 29%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/__/__/version_info.cpp.o[0m
+[2.097s] [ 32%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/dock_drive.cpp.o[0m
+[2.099s] [ 35%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/logging.cpp.o[0m
+[2.104s] [ 38%] [32mBuilding CXX object src/driver/CMakeFiles/kobuki_core.dir/packet_finder.cpp.o[0m
+[8.430s] [ 41%] [32m[1mLinking CXX shared library libkobuki_core.so[0m
+[8.671s] [ 41%] Built target kobuki_core
+[8.682s] [35m[1mScanning dependencies of target kobuki_core_demo_custom_logging[0m
+[8.682s] [35m[1mScanning dependencies of target kobuki_core_demo_raw_data_stream[0m
+[8.683s] [35m[1mScanning dependencies of target kobuki_core_tool_version_info[0m
+[8.683s] [35m[1mScanning dependencies of target kobuki_core_tool_simple_keyop[0m
+[8.683s] [35m[1mScanning dependencies of target kobuki_core_demo_velocity_commands[0m
+[8.683s] [35m[1mScanning dependencies of target kobuki_core_demo_simple_loop[0m
+[8.683s] [35m[1mScanning dependencies of target kobuki_core_demo_chirp[0m
+[8.683s] [35m[1mScanning dependencies of target kobuki_core_demo_log_levels[0m
+[8.683s] [35m[1mScanning dependencies of target kobuki_core_demo_buttons[0m
+[8.684s] [35m[1mScanning dependencies of target kobuki_core_demo_data_stream[0m
+[8.695s] [ 44%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_velocity_commands.dir/velocity_commands.cpp.o[0m
+[8.755s] [ 50%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_buttons.dir/buttons.cpp.o[0m
+[8.755s] [ 50%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_raw_data_stream.dir/raw_data_stream.cpp.o[0m
+[8.756s] [ 52%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_custom_logging.dir/custom_logging.cpp.o[0m
+[8.759s] [ 55%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_data_stream.dir/data_stream.cpp.o[0m
+[8.760s] [ 58%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_log_levels.dir/log_levels.cpp.o[0m
+[8.760s] [ 61%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_simple_loop.dir/simple_loop.cpp.o[0m
+[8.760s] [ 64%] [32mBuilding CXX object src/tools/CMakeFiles/kobuki_core_tool_simple_keyop.dir/simple_keyop.cpp.o[0m
+[8.765s] [ 67%] [32mBuilding CXX object src/tools/CMakeFiles/kobuki_core_tool_version_info.dir/version_info.cpp.o[0m
+[8.778s] [ 70%] [32mBuilding CXX object src/demos/CMakeFiles/kobuki_core_demo_chirp.dir/chirp.cpp.o[0m
+[9.180s] [ 73%] [32m[1mLinking CXX executable demo_velocity_commands[0m
+[9.490s] [ 73%] Built target kobuki_core_demo_velocity_commands
+[14.285s] [ 76%] [32m[1mLinking CXX executable demo_log_levels[0m
+[14.576s] [ 79%] [32m[1mLinking CXX executable demo_chirp[0m
+[14.739s] [ 79%] Built target kobuki_core_demo_log_levels
+[14.893s] [ 82%] [32m[1mLinking CXX executable demo_data_stream[0m
+[14.957s] [ 82%] Built target kobuki_core_demo_chirp
+[15.039s] [ 85%] [32m[1mLinking CXX executable demo_custom_logging[0m
+[15.071s] [ 88%] [32m[1mLinking CXX executable kobuki-simple-keyop[0m
+[15.148s] [ 91%] [32m[1mLinking CXX executable demo_simple_loop[0m
+[15.165s] [ 94%] [32m[1mLinking CXX executable demo_buttons[0m
+[15.272s] [ 97%] [32m[1mLinking CXX executable demo_raw_data_stream[0m
+[15.303s] [ 97%] Built target kobuki_core_demo_data_stream
+[15.425s] [ 97%] Built target kobuki_core_demo_custom_logging
+[15.469s] [ 97%] Built target kobuki_core_tool_simple_keyop
+[15.534s] [ 97%] Built target kobuki_core_demo_buttons
+[15.542s] [ 97%] Built target kobuki_core_demo_simple_loop
+[15.552s] [ 97%] Built target kobuki_core_demo_raw_data_stream
+[15.724s] [100%] [32m[1mLinking CXX executable kobuki-version-info[0m
+[16.289s] [100%] Built target kobuki_core_tool_version_info
+[16.339s] Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core -- -j16 -l16
+[16.494s] Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core
+[16.536s] -- Install configuration: ""
+[16.537s] -- Execute custom install script
+[16.539s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/command.hpp
+[16.558s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/dock_drive.hpp
+[16.573s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/event_manager.hpp
+[16.594s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/kobuki.hpp
+[16.594s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/logging.hpp
+[16.611s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/macros.hpp
+[16.625s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules.hpp
+[16.643s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/acceleration_limiter.hpp
+[16.660s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/battery.hpp
+[16.674s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/diff_drive.hpp
+[16.685s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/digital_output.hpp
+[16.696s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/led_array.hpp
+[16.707s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/sound.hpp
+[16.719s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packet_handler/packet_finder.hpp
+[16.732s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_base.hpp
+[16.743s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_headers.hpp
+[16.757s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets.hpp
+[16.771s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/cliff.hpp
+[16.783s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/controller_info.hpp
+[16.797s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/core_sensors.hpp
+[16.819s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/current.hpp
+[16.833s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/dock_ir.hpp
+[16.847s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/eeprom.hpp
+[16.862s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/firmware.hpp
+[16.877s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/gp_input.hpp
+[16.894s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/hardware.hpp
+[16.928s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/inertia.hpp
+[16.944s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/three_axis_gyro.hpp
+[16.974s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/unique_device_id.hpp
+[16.994s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/parameters.hpp
+[17.014s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/version_info.hpp
+[17.048s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_buttons
+[17.083s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_chirp
+[17.114s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_custom_logging
+[17.162s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_data_stream
+[17.191s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_log_levels
+[17.231s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_raw_data_stream
+[17.285s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_simple_loop
+[17.349s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/kobuki_core/demo_velocity_commands
+[17.375s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin/kobuki-version-info
+[17.410s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin/kobuki-simple-keyop
+[17.432s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/CMakeLists.txt
+[17.464s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/command.hpp
+[17.465s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/dock_drive.hpp
+[17.465s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/event_manager.hpp
+[17.466s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/kobuki.hpp
+[17.467s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/logging.hpp
+[17.467s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/macros.hpp
+[17.467s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules.hpp
+[17.467s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/acceleration_limiter.hpp
+[17.467s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/battery.hpp
+[17.467s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/diff_drive.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/digital_output.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/led_array.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/modules/sound.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packet_handler/packet_finder.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_base.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packet_handler/payload_headers.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets.hpp
+[17.468s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/cliff.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/controller_info.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/core_sensors.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/current.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/dock_ir.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/eeprom.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/firmware.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/gp_input.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/hardware.hpp
+[17.469s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/inertia.hpp
+[17.470s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/three_axis_gyro.hpp
+[17.470s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/packets/unique_device_id.hpp
+[17.470s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/parameters.hpp
+[17.470s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/include/kobuki_core/version_info.hpp
+[17.470s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/environment/library_path.sh
+[17.512s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/environment/library_path.dsv
+[17.546s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/ament_index/resource_index/package_run_dependencies/kobuki_core
+[17.581s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/ament_index/resource_index/parent_prefix_path/kobuki_core
+[17.613s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/environment/ament_prefix_path.sh
+[17.649s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/environment/ament_prefix_path.dsv
+[17.678s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/environment/path.sh
+[17.718s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/environment/path.dsv
+[17.750s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/local_setup.bash
+[17.773s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/local_setup.sh
+[17.794s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/local_setup.zsh
+[17.815s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/local_setup.dsv
+[17.848s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.dsv
+[17.888s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/ament_index/resource_index/packages/kobuki_core
+[17.931s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_targets-extras.cmake
+[17.968s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_dependencies-extras.cmake
+[17.999s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.029s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/ament_cmake_export_libraries-extras.cmake
+[18.055s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreConfig.cmake
+[18.110s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreConfig-version.cmake
+[18.151s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.xml
+[18.175s] -- Installing: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport.cmake
+[18.175s] -- Installing: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake/kobuki_coreExport-noconfig.cmake
+[18.176s] -- Installing: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/libkobuki_core.so.1.3.1
+[18.182s] -- Set runtime path of "/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/libkobuki_core.so.1.3.1" to ""
+[18.182s] -- Installing: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/libkobuki_core.so
+[18.193s] Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core
