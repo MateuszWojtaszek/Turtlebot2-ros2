@@ -1,10 +1,10 @@
 # Spis treści
 
-### 1. [Instalacja Ubuntu 20.04 na Intel NUC](#instalacja-ubuntu-2004-na-intel-nuc)
-### 2. [Zmiana systemu przy połączeniu ssh](#zmiana-systemu-przy-połączeniu-ssh)
-### 3. [Instalacja ROS2 Galactic na Ubuntu 20.04](#instalacja-ros2-galactic-na-ubuntu-2004))
-### 4. [Instalacja Nav2 na Ubuntu 20.04 na Intel NUC](#instalacja-nav2-na-ubuntu-2004-na-intel-nuc-binarki)
-### 5. [Instalacja sterowników Kobuki Base (ROS2 Galactic)](#instalacja-sterowników-kobuki-base-ros2-galacitc)
+### 1. [Instalacja Ubuntu 20.04 na Intel NUC](#1-instalacja-ubuntu-2004-na-intel-nuc-1)
+### 2. [Zmiana systemu przy połączeniu ssh](#2-zmiana-systemu-przy-poc582c485czeniu-ssh-1)
+### 3. [Instalacja ROS2 Galactic na Ubuntu 20.04](#3-instalacja-ros2-galactic-na-ubuntu-2004-1)
+### 4. [Instalacja Nav2 na Ubuntu 20.04 na Intel NUC](#4-instalacja-nav2-na-ubuntu-2004-na-intel-nuc-binarki)
+### 5. [Instalacja sterowników Kobuki Base (ROS2 Galactic)](#5-instalacja-sterowników-kobuki-base-ros2-galacitc)
 ---
 
 # 1. Instalacja Ubuntu 20.04 na Intel NUC
