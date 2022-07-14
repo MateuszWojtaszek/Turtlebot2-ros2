@@ -1,6 +1,0 @@
-[0.032s] Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j16 -l16
-[0.050s] CMake Error: The current CMakeCache.txt directory /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux/CMakeCache.txt is different than the directory /home/turtlebot5/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
-[0.061s] CMake Error: The source directory "/home/turtlebot5/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux" does not exist.
-[0.061s] Specify --help for usage, or press the help button on the CMake GUI.
-[0.063s] make: *** [Makefile:310: cmake_check_build_system] Error 1
-[0.072s] Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j16 -l16

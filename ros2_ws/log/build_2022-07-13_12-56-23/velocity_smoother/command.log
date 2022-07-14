@@ -1,2 +1,0 @@
-Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother -- -j16 -l16
-Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother -- -j16 -l16

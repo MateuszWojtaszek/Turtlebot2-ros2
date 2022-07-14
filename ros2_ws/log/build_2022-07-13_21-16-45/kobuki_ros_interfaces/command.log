@@ -1,4 +1,0 @@
-Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces -- -j16 -l16
-Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces -- -j16 -l16
-Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces
-Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces

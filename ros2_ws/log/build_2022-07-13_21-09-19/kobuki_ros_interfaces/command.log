@@ -1,1 +1,0 @@
-Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces
