@@ -13,3 +13,9 @@
 [submodule "ros2_ws/src/kobuki_ros"]
 	path = ros2_ws/src/kobuki_ros
 	url = https://github.com/kobuki-base/kobuki_ros.git
+[submodule "ros2_ws/src/--name"]
+	path = ros2_ws/src/--name
+	url = https://github.com/igrak34/urg_node.git
+[submodule "urg_node_galactic"]
+	path = ros2_ws/src/urg_node
+	url = https://github.com/igrak34/urg_node.git

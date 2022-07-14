@@ -1,0 +1,36 @@
+[0.218s] Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node -- -j16 -l16
+[0.257s] [ 33%] Built target kobuki_ros_node
+[0.270s] [ 50%] [32mBuilding CXX object CMakeFiles/kobuki_ros.dir/src/diagnostics.cpp.o[0m
+[0.278s] [ 83%] [32mBuilding CXX object CMakeFiles/kobuki_ros.dir/src/kobuki_ros.cpp.o[0m
+[0.278s] [ 83%] [32mBuilding CXX object CMakeFiles/kobuki_ros.dir/src/odometry.cpp.o[0m
+[33.721s] [100%] [32m[1mLinking CXX shared library libkobuki_ros.so[0m
+[36.093s] [100%] Built target kobuki_ros
+[36.103s] Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node -- -j16 -l16
+[36.126s] Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node
+[36.132s] -- Install configuration: ""
+[36.133s] -- Execute custom install script
+[36.133s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/kobuki_node/kobuki_ros_node
+[36.133s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/lib/libkobuki_ros.so
+[36.134s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/include/kobuki_node/diagnostics.hpp
+[36.134s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/include/kobuki_node/kobuki_ros.hpp
+[36.134s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/include/kobuki_node/odometry.hpp
+[36.135s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/config/kobuki_node_params.yaml
+[36.135s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/launch/kobuki_node-composed-launch.py
+[36.135s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/launch/kobuki_node-launch.py
+[36.135s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/package_run_dependencies/kobuki_node
+[36.135s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/parent_prefix_path/kobuki_node
+[36.136s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/ament_prefix_path.sh
+[36.136s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/ament_prefix_path.dsv
+[36.136s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/path.sh
+[36.136s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/environment/path.dsv
+[36.136s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.bash
+[36.137s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.sh
+[36.137s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.zsh
+[36.137s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/local_setup.dsv
+[36.137s] -- Symlinking: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.dsv
+[36.143s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/packages/kobuki_node
+[36.144s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/ament_index/resource_index/rclcpp_components/kobuki_node
+[36.144s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/cmake/kobuki_nodeConfig.cmake
+[36.144s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/cmake/kobuki_nodeConfig-version.cmake
+[36.144s] -- Up-to-date symlink: /home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node/share/kobuki_node/package.xml
+[36.146s] Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node

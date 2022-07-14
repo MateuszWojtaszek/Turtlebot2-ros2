@@ -1,0 +1,2 @@
+Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/urg_node': /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/urg_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node
+Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/urg_node' returned '1': /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/urg_node -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node

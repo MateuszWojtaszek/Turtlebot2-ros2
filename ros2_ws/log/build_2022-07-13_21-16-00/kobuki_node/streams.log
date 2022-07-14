@@ -1,0 +1,29 @@
+[0.178s] Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node
+[0.192s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[0.215s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.273s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.282s] -- Found angles: 1.12.4 (/opt/ros/galactic/share/angles/cmake)
+[0.283s] -- Found diagnostic_msgs: 2.2.4 (/opt/ros/galactic/share/diagnostic_msgs/cmake)
+[0.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.396s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.546s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.614s] -- Found diagnostic_updater: 2.1.3 (/opt/ros/galactic/share/diagnostic_updater/cmake)
+[3.650s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[3.651s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[3.666s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.783s] -- Found ecl_build: 1.0.2 (/opt/ros/galactic/share/ecl_build/cmake)
+[3.788s] -- Found ecl_errors: 1.1.0 (/opt/ros/galactic/share/ecl_errors/cmake)
+[3.792s] -- Found ecl_exceptions: 1.2.0 (/opt/ros/galactic/share/ecl_exceptions/cmake)
+[3.795s] -- Found ecl_geometry: 1.2.0 (/opt/ros/galactic/share/ecl_geometry/cmake)
+[3.825s] -- Found ecl_sigslots: 1.2.0 (/opt/ros/galactic/share/ecl_sigslots/cmake)
+[3.841s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[3.865s] -- Found kobuki_core: 1.3.1 (/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/cmake)
+[3.884s] -- Found kobuki_ros_interfaces: 1.0.0 (/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/cmake)
+[4.004s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[4.068s] -- Found rclcpp_components: 9.2.1 (/opt/ros/galactic/share/rclcpp_components/cmake)
+[4.106s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[4.156s] -- Found tf2: 0.17.3 (/opt/ros/galactic/share/tf2/cmake)
+[4.162s] -- Found tf2_ros: 0.17.3 (/opt/ros/galactic/share/tf2_ros/cmake)
+[4.392s] -- Configuring done
+[4.417s] -- Generating done
+[4.419s] -- Build files have been written to: /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node

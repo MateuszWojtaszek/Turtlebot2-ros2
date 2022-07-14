@@ -1,0 +1,881 @@
+[0.155s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.155s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fc26e40a5e0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fc26e40a5e0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fc26e2a6460>)
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.172s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.172s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/igor/tb2_ros2_nav2/ros2_ws'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.173s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.180s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ignore_ament_install'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['colcon_pkg']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'colcon_pkg'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(src/cmd_vel_mux) by extension 'ros'
+[0.183s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cmd_vel_mux' with type 'ros.ament_cmake' and name 'cmd_vel_mux'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['ignore', 'ignore_ament_install']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'ignore'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'ignore_ament_install'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['colcon_pkg']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'colcon_pkg'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['colcon_meta']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'colcon_meta'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extensions ['ros']
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_core) by extension 'ros'
+[0.184s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_core' with type 'ros.ament_cmake' and name 'kobuki_core'
+[0.184s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['colcon_meta']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'colcon_meta'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extensions ['ros']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_auto_docking) by extension 'ros'
+[0.186s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_auto_docking' with type 'ros.ament_cmake' and name 'kobuki_auto_docking'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'ignore_ament_install'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['colcon_pkg']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'colcon_pkg'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['colcon_meta']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'colcon_meta'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extensions ['ros']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_bumper2pc) by extension 'ros'
+[0.187s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_bumper2pc' with type 'ros.ament_cmake' and name 'kobuki_bumper2pc'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_controller_tutorial) by extensions ['ignore', 'ignore_ament_install']
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_controller_tutorial) by extension 'ignore'
+[0.187s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_controller_tutorial) ignored
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extensions ['ros']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_description) by extension 'ros'
+[0.188s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_description' with type 'ros.ament_cmake' and name 'kobuki_description'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['ignore', 'ignore_ament_install']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'ignore'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'ignore_ament_install'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['colcon_pkg']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'colcon_pkg'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['colcon_meta']
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'colcon_meta'
+[0.188s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_keyop) by extension 'ros'
+[0.189s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_keyop' with type 'ros.ament_cmake' and name 'kobuki_keyop'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_node) by extension 'ros'
+[0.191s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_node' with type 'ros.ament_cmake' and name 'kobuki_node'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['ignore', 'ignore_ament_install']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'ignore_ament_install'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['colcon_pkg']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'colcon_pkg'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['colcon_meta']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'colcon_meta'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extensions ['ros']
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_random_walker) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_random_walker' with type 'ros.ament_cmake' and name 'kobuki_random_walker'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['colcon_meta']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'colcon_meta'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extensions ['ros']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_ros) by extension 'ros'
+[0.192s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_ros' with type 'ros.ament_cmake' and name 'kobuki_ros'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['ignore', 'ignore_ament_install']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'ignore'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'ignore_ament_install'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['colcon_pkg']
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'colcon_pkg'
+[0.192s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['colcon_meta']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'colcon_meta'
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extensions ['ros']
+[0.193s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_safety_controller) by extension 'ros'
+[0.193s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros/kobuki_safety_controller' with type 'ros.ament_cmake' and name 'kobuki_safety_controller'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_testsuite) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_testsuite) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros/kobuki_testsuite) ignored
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'ignore'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'ignore_ament_install'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['colcon_pkg']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'colcon_pkg'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['colcon_meta']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'colcon_meta'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extensions ['ros']
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(src/kobuki_ros_interfaces) by extension 'ros'
+[0.194s] DEBUG:colcon.colcon_core.package_identification:Package 'src/kobuki_ros_interfaces' with type 'ros.ament_cmake' and name 'kobuki_ros_interfaces'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(src/urg_node) by extension 'ros'
+[0.196s] DEBUG:colcon.colcon_core.package_identification:Package 'src/urg_node' with type 'ros.ament_cmake' and name 'urg_node'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['ignore', 'ignore_ament_install']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'ignore'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'ignore_ament_install'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(src/velocity_smoother) by extension 'ros'
+[0.204s] DEBUG:colcon.colcon_core.package_identification:Package 'src/velocity_smoother' with type 'ros.ament_cmake' and name 'velocity_smoother'
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.204s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.218s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.220s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 359 installed packages in /opt/ros/galactic
+[0.221s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_target' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_clean_cache' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_clean_first' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'cmake_force_configure' from command line to 'False'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'ament_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'catkin_cmake_args' from command line to 'None'
+[0.276s] Level 5:colcon.colcon_core.verb:set package 'cmd_vel_mux' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.276s] DEBUG:colcon.colcon_core.verb:Building package 'cmd_vel_mux' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux', 'symlink_install': False, 'test_result_base': None}
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'catkin_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'kobuki_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.277s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_core', 'symlink_install': False, 'test_result_base': None}
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_target' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description', 'symlink_install': False, 'test_result_base': None}
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.278s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_ros_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_target' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.279s] Level 5:colcon.colcon_core.verb:set package 'urg_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.279s] DEBUG:colcon.colcon_core.verb:Building package 'urg_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/urg_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/urg_node', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'velocity_smoother' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.280s] DEBUG:colcon.colcon_core.verb:Building package 'velocity_smoother' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/velocity_smoother', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_clean_cache' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_clean_first' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'cmake_force_configure' from command line to 'False'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'ament_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'catkin_cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_auto_docking' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_auto_docking' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking', 'symlink_install': False, 'test_result_base': None}
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_args' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_target' from command line to 'None'
+[0.281s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_clean_cache' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_clean_first' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'cmake_force_configure' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'ament_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'catkin_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_bumper2pc' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.282s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_bumper2pc' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc', 'symlink_install': False, 'test_result_base': None}
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_target' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_clean_first' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'cmake_force_configure' from command line to 'False'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'ament_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.282s] Level 5:colcon.colcon_core.verb:set package 'kobuki_keyop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.282s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_keyop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'kobuki_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node', 'symlink_install': False, 'test_result_base': None}
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_target' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_clean_first' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'cmake_force_configure' from command line to 'False'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'ament_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.284s] Level 5:colcon.colcon_core.verb:set package 'kobuki_random_walker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.284s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_random_walker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_target' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_clean_first' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'cmake_force_configure' from command line to 'False'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'ament_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_safety_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.285s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_safety_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller', 'symlink_install': False, 'test_result_base': None}
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_args' from command line to 'None'
+[0.285s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_target' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_clean_first' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'cmake_force_configure' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'ament_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'kobuki_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.286s] DEBUG:colcon.colcon_core.verb:Building package 'kobuki_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros', 'merge_install': False, 'path': '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_ros', 'symlink_install': False, 'test_result_base': None}
+[0.286s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.289s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.290s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces' with build type 'ament_cmake'
+[0.290s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros_interfaces'
+[0.294s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.294s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.294s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.297s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_core' with build type 'ament_cmake'
+[0.297s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_core'
+[0.299s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.299s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.302s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux' with build type 'ament_cmake'
+[0.303s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/cmd_vel_mux'
+[0.304s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.304s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.307s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/velocity_smoother' with build type 'ament_cmake'
+[0.307s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/velocity_smoother'
+[0.309s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.309s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.312s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description' with build type 'ament_cmake'
+[0.312s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_description'
+[0.313s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.313s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.317s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/urg_node' with build type 'ament_cmake'
+[0.317s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/urg_node'
+[0.319s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.319s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces -- -j16 -l16
+[0.334s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core -- -j16 -l16
+[0.338s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j16 -l16
+[0.342s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother -- -j16 -l16
+[0.346s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description -- -j16 -l16
+[0.354s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/urg_node': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/urg_node -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node
+[0.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description -- -j16 -l16
+[0.399s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description
+[0.424s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother -- -j16 -l16
+[0.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux -- -j16 -l16
+[0.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_description)
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_description
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake module files
+[0.436s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake config files
+[0.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_description', 'cmake_prefix_path')
+[0.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.ps1'
+[0.439s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.dsv'
+[0.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.sh'
+[0.440s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/pkgconfig/kobuki_description.pc'
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/python3.8/site-packages'
+[0.441s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[0.442s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.ps1'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.dsv'
+[0.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.sh'
+[0.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.bash'
+[0.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.zsh'
+[0.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/colcon-core/packages/kobuki_description)
+[0.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother
+[0.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux
+[0.457s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core -- -j16 -l16
+[0.462s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_description)
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake module files
+[0.468s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description' for CMake config files
+[0.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_description', 'cmake_prefix_path')
+[0.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.ps1'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.dsv'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/hook/cmake_prefix_path.sh'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/pkgconfig/kobuki_description.pc'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/lib/python3.8/site-packages'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/bin'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.ps1'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.dsv'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.sh'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.bash'
+[0.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/kobuki_description/package.zsh'
+[0.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_description/share/colcon-core/packages/kobuki_description)
+[0.479s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velocity_smoother)
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake module files
+[0.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/velocity_smoother
+[0.482s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake config files
+[0.482s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'cmake_prefix_path')
+[0.483s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.ps1'
+[0.484s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.dsv'
+[0.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.sh'
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib'
+[0.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'ld_library_path_lib')
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.ps1'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.dsv'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.sh'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/pkgconfig/velocity_smoother.pc'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/python3.8/site-packages'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.ps1'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.dsv'
+[0.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.sh'
+[0.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.bash'
+[0.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.zsh'
+[0.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/colcon-core/packages/velocity_smoother)
+[0.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core
+[0.496s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel_mux)
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake module files
+[0.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/cmd_vel_mux
+[0.499s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake config files
+[0.500s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'cmake_prefix_path')
+[0.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.ps1'
+[0.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.dsv'
+[0.502s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.sh'
+[0.502s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib'
+[0.502s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'ld_library_path_lib')
+[0.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.ps1'
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.dsv'
+[0.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.sh'
+[0.505s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[0.505s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/pkgconfig/cmd_vel_mux.pc'
+[0.506s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/python3.8/site-packages'
+[0.506s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[0.507s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.ps1'
+[0.508s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv'
+[0.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.sh'
+[0.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.bash'
+[0.509s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.zsh'
+[0.509s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/colcon-core/packages/cmd_vel_mux)
+[0.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(velocity_smoother)
+[0.515s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake module files
+[0.519s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother' for CMake config files
+[0.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'cmake_prefix_path')
+[0.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.ps1'
+[0.531s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.dsv'
+[0.533s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/cmake_prefix_path.sh'
+[0.535s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib'
+[0.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('velocity_smoother', 'ld_library_path_lib')
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.ps1'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.dsv'
+[0.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/hook/ld_library_path_lib.sh'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/pkgconfig/velocity_smoother.pc'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib/python3.8/site-packages'
+[0.538s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/bin'
+[0.539s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.ps1'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.dsv'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.sh'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.bash'
+[0.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/velocity_smoother/package.zsh'
+[0.541s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/share/colcon-core/packages/velocity_smoother)
+[0.543s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cmd_vel_mux)
+[0.545s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake module files
+[0.546s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux' for CMake config files
+[0.547s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'cmake_prefix_path')
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.ps1'
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.dsv'
+[0.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/cmake_prefix_path.sh'
+[0.548s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib'
+[0.549s] Level 1:colcon.colcon_core.shell:create_environment_hook('cmd_vel_mux', 'ld_library_path_lib')
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.ps1'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.dsv'
+[0.550s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/hook/ld_library_path_lib.sh'
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[0.550s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/pkgconfig/cmd_vel_mux.pc'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib/python3.8/site-packages'
+[0.551s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/bin'
+[0.552s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.ps1'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.dsv'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.sh'
+[0.553s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.bash'
+[0.554s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/cmd_vel_mux/package.zsh'
+[0.554s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/share/colcon-core/packages/cmd_vel_mux)
+[0.558s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces -- -j16 -l16
+[0.559s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_core)
+[0.561s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake module files
+[0.561s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_core
+[0.562s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake config files
+[0.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'cmake_prefix_path')
+[0.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.ps1'
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.dsv'
+[0.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.sh'
+[0.565s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib'
+[0.565s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'ld_library_path_lib')
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.ps1'
+[0.566s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.dsv'
+[0.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.sh'
+[0.567s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[0.567s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'path')
+[0.568s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.ps1'
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.dsv'
+[0.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.sh'
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/pkgconfig/kobuki_core.pc'
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/python3.8/site-packages'
+[0.570s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[0.570s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'pythonscriptspath')
+[0.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.ps1'
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.dsv'
+[0.572s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.sh'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.ps1'
+[0.573s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.dsv'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.sh'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.bash'
+[0.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.zsh'
+[0.575s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/colcon-core/packages/kobuki_core)
+[0.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_core)
+[0.594s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake module files
+[0.594s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core' for CMake config files
+[0.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'cmake_prefix_path')
+[0.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.ps1'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.dsv'
+[0.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/cmake_prefix_path.sh'
+[0.597s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib'
+[0.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'ld_library_path_lib')
+[0.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.ps1'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.dsv'
+[0.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/ld_library_path_lib.sh'
+[0.599s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[0.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'path')
+[0.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.ps1'
+[0.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.dsv'
+[0.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/path.sh'
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/pkgconfig/kobuki_core.pc'
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib/python3.8/site-packages'
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin'
+[0.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_core', 'pythonscriptspath')
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.ps1'
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.dsv'
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/hook/pythonscriptspath.sh'
+[0.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.ps1'
+[0.605s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.dsv'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.sh'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.bash'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/kobuki_core/package.zsh'
+[0.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/share/colcon-core/packages/kobuki_core)
+[0.741s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces
+[0.882s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_ros_interfaces)
+[0.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_ros_interfaces
+[0.884s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake module files
+[0.885s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake config files
+[0.887s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'cmake_prefix_path')
+[0.888s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.ps1'
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.dsv'
+[0.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.sh'
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib'
+[0.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'ld_library_path_lib')
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.ps1'
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.dsv'
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.sh'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/pkgconfig/kobuki_ros_interfaces.pc'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages'
+[0.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'pythonpath')
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.ps1'
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.dsv'
+[0.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.sh'
+[0.894s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.ps1'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.dsv'
+[0.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.sh'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.bash'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.zsh'
+[0.896s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/colcon-core/packages/kobuki_ros_interfaces)
+[1.087s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_ros_interfaces)
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake module files
+[1.089s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces' for CMake config files
+[1.090s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'cmake_prefix_path')
+[1.091s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.ps1'
+[1.092s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.dsv'
+[1.092s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/cmake_prefix_path.sh'
+[1.093s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib'
+[1.093s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'ld_library_path_lib')
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.ps1'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.dsv'
+[1.094s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/ld_library_path_lib.sh'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/pkgconfig/kobuki_ros_interfaces.pc'
+[1.095s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages'
+[1.095s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_ros_interfaces', 'pythonpath')
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.ps1'
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.dsv'
+[1.096s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/hook/pythonpath.sh'
+[1.097s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/bin'
+[1.098s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.ps1'
+[1.098s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.dsv'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.sh'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.bash'
+[1.099s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/kobuki_ros_interfaces/package.zsh'
+[1.099s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/share/colcon-core/packages/kobuki_ros_interfaces)
+[1.100s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking' with build type 'ament_cmake'
+[1.100s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking'
+[1.101s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.101s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.106s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc' with build type 'ament_cmake'
+[1.107s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc'
+[1.108s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.108s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.113s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop' with build type 'ament_cmake'
+[1.113s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop'
+[1.115s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.115s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.121s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node' with build type 'ament_cmake'
+[1.122s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node'
+[1.123s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.123s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.128s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker' with build type 'ament_cmake'
+[1.128s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker'
+[1.130s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.130s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.136s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller' with build type 'ament_cmake'
+[1.136s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller'
+[1.138s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.138s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.216s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker
+[1.223s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc
+[1.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller
+[1.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking
+[1.299s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_node': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_node -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_node
+[1.330s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop
+[4.343s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_safety_controller -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller
+[4.345s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller -- -j16 -l16
+[4.396s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller -- -j16 -l16
+[4.414s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller
+[4.433s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_safety_controller)
+[4.435s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake module files
+[4.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_safety_controller
+[4.436s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake config files
+[4.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'cmake_prefix_path')
+[4.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.ps1'
+[4.438s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.dsv'
+[4.439s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.sh'
+[4.439s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib'
+[4.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'ld_library_path_lib')
+[4.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.ps1'
+[4.441s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.dsv'
+[4.441s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.sh'
+[4.441s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[4.441s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/pkgconfig/kobuki_safety_controller.pc'
+[4.441s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/python3.8/site-packages'
+[4.442s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[4.443s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.ps1'
+[4.443s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.dsv'
+[4.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.sh'
+[4.444s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.bash'
+[4.445s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.zsh'
+[4.445s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/colcon-core/packages/kobuki_safety_controller)
+[4.463s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_safety_controller)
+[4.465s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake module files
+[4.466s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller' for CMake config files
+[4.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'cmake_prefix_path')
+[4.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.ps1'
+[4.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.dsv'
+[4.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/cmake_prefix_path.sh'
+[4.468s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib'
+[4.468s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_safety_controller', 'ld_library_path_lib')
+[4.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.ps1'
+[4.469s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.dsv'
+[4.469s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/hook/ld_library_path_lib.sh'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/pkgconfig/kobuki_safety_controller.pc'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/lib/python3.8/site-packages'
+[4.470s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/bin'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.ps1'
+[4.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.dsv'
+[4.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.sh'
+[4.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.bash'
+[4.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/kobuki_safety_controller/package.zsh'
+[4.474s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_safety_controller/share/colcon-core/packages/kobuki_safety_controller)
+[4.689s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_auto_docking -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_auto_docking
+[4.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/lib:${LD_LIBRARY_PATH} PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_core/bin:${PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_auto_docking -- -j16 -l16
+[4.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_keyop -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop
+[4.751s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop -- -j16 -l16
+[4.795s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_bumper2pc -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc
+[4.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc -- -j16 -l16
+[4.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop -- -j16 -l16
+[4.833s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop
+[4.853s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_keyop)
+[4.856s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake module files
+[4.856s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/velocity_smoother/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:/home/igor/tb2_ros2_nav2/ros2_ws/install/cmd_vel_mux/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_keyop
+[4.857s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake config files
+[4.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'cmake_prefix_path')
+[4.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.ps1'
+[4.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.dsv'
+[4.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.sh'
+[4.860s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib'
+[4.860s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'ld_library_path_lib')
+[4.862s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.ps1'
+[4.863s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.dsv'
+[4.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.sh'
+[4.863s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[4.863s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/pkgconfig/kobuki_keyop.pc'
+[4.864s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/python3.8/site-packages'
+[4.864s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[4.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.ps1'
+[4.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.dsv'
+[4.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.sh'
+[4.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.bash'
+[4.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.zsh'
+[4.867s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/colcon-core/packages/kobuki_keyop)
+[4.871s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/kobuki_ros/kobuki_random_walker -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker
+[4.874s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker -- -j16 -l16
+[4.878s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc -- -j16 -l16
+[4.889s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_keyop)
+[4.891s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake module files
+[4.891s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop' for CMake config files
+[4.891s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'cmake_prefix_path')
+[4.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.ps1'
+[4.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.dsv'
+[4.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/cmake_prefix_path.sh'
+[4.893s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib'
+[4.893s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_keyop', 'ld_library_path_lib')
+[4.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.ps1'
+[4.895s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.dsv'
+[4.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/hook/ld_library_path_lib.sh'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[4.895s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/pkgconfig/kobuki_keyop.pc'
+[4.896s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/lib/python3.8/site-packages'
+[4.896s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/bin'
+[4.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.ps1'
+[4.897s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.dsv'
+[4.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.sh'
+[4.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.bash'
+[4.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/kobuki_keyop/package.zsh'
+[4.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_keyop/share/colcon-core/packages/kobuki_keyop)
+[4.903s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc
+[4.923s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_bumper2pc)
+[4.925s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake module files
+[4.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_bumper2pc
+[4.927s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake config files
+[4.927s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'cmake_prefix_path')
+[4.929s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.ps1'
+[4.929s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.dsv'
+[4.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.sh'
+[4.930s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib'
+[4.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'ld_library_path_lib')
+[4.931s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.ps1'
+[4.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.dsv'
+[4.932s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.sh'
+[4.932s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[4.933s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/pkgconfig/kobuki_bumper2pc.pc'
+[4.933s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/python3.8/site-packages'
+[4.933s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[4.934s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.ps1'
+[4.934s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.dsv'
+[4.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.sh'
+[4.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.bash'
+[4.935s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.zsh'
+[4.936s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/colcon-core/packages/kobuki_bumper2pc)
+[4.940s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker -- -j16 -l16
+[4.955s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_bumper2pc)
+[4.957s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake module files
+[4.958s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc' for CMake config files
+[4.959s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'cmake_prefix_path')
+[4.961s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.ps1'
+[4.963s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.dsv'
+[4.964s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/cmake_prefix_path.sh'
+[4.964s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib'
+[4.965s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_bumper2pc', 'ld_library_path_lib')
+[4.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.ps1'
+[4.966s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.dsv'
+[4.966s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/hook/ld_library_path_lib.sh'
+[4.966s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[4.966s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/pkgconfig/kobuki_bumper2pc.pc'
+[4.967s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/lib/python3.8/site-packages'
+[4.967s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/bin'
+[4.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.ps1'
+[4.968s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.dsv'
+[4.968s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.sh'
+[4.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.bash'
+[4.969s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/kobuki_bumper2pc/package.zsh'
+[4.969s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_bumper2pc/share/colcon-core/packages/kobuki_bumper2pc)
+[4.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker
+[4.995s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_random_walker)
+[4.997s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake module files
+[4.998s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker' returned '0': AMENT_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces:/opt/ros/galactic LD_LIBRARY_PATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_ros_interfaces/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/igor/tb2_ros2_nav2/ros2_ws/build/kobuki_random_walker
+[4.998s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake config files
+[4.999s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'cmake_prefix_path')
+[5.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.ps1'
+[5.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.dsv'
+[5.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.sh'
+[5.001s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib'
+[5.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'ld_library_path_lib')
+[5.002s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.ps1'
+[5.003s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.dsv'
+[5.003s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.sh'
+[5.003s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[5.003s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/pkgconfig/kobuki_random_walker.pc'
+[5.004s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/python3.8/site-packages'
+[5.004s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[5.005s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.ps1'
+[5.006s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.dsv'
+[5.006s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.sh'
+[5.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.bash'
+[5.007s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.zsh'
+[5.007s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/colcon-core/packages/kobuki_random_walker)
+[5.026s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(kobuki_random_walker)
+[5.028s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake module files
+[5.028s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker' for CMake config files
+[5.028s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'cmake_prefix_path')
+[5.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.ps1'
+[5.030s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.dsv'
+[5.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/cmake_prefix_path.sh'
+[5.031s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib'
+[5.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('kobuki_random_walker', 'ld_library_path_lib')
+[5.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.ps1'
+[5.032s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.dsv'
+[5.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/hook/ld_library_path_lib.sh'
+[5.032s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[5.032s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/pkgconfig/kobuki_random_walker.pc'
+[5.033s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/lib/python3.8/site-packages'
+[5.033s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/bin'
+[5.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.ps1'
+[5.034s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.dsv'
+[5.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.sh'
+[5.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.bash'
+[5.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/kobuki_random_walker/package.zsh'
+[5.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/kobuki_random_walker/share/colcon-core/packages/kobuki_random_walker)
+[5.234s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/igor/tb2_ros2_nav2/ros2_ws/build/urg_node' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/igor/tb2_ros2_nav2/ros2_ws/src/urg_node -DCMAKE_INSTALL_PREFIX=/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node
+[5.244s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(urg_node)
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node' for CMake module files
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node' for CMake config files
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/bin'
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/lib/pkgconfig/urg_node.pc'
+[5.246s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/lib/python3.8/site-packages'
+[5.247s] Level 1:colcon.colcon_core.environment:checking '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/bin'
+[5.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/share/urg_node/package.ps1'
+[5.248s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/share/urg_node/package.dsv'
+[5.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/share/urg_node/package.sh'
+[5.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/share/urg_node/package.bash'
+[5.248s] INFO:colcon.colcon_core.shell:Creating package script '/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/share/urg_node/package.zsh'
+[5.249s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/igor/tb2_ros2_nav2/ros2_ws/install/urg_node/share/colcon-core/packages/urg_node)
+[23.116s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete was interrupted
+[23.116s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete again
+[23.133s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished
+[23.133s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[23.133s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[23.133s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[23.168s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[23.168s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[23.168s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[23.169s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[23.173s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[23.174s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[23.175s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/igor/tb2_ros2_nav2/ros2_ws/install/local_setup.ps1'
+[23.176s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/igor/tb2_ros2_nav2/ros2_ws/install/_local_setup_util_ps1.py'
+[23.177s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/igor/tb2_ros2_nav2/ros2_ws/install/setup.ps1'
+[23.178s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/igor/tb2_ros2_nav2/ros2_ws/install/local_setup.sh'
+[23.178s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/igor/tb2_ros2_nav2/ros2_ws/install/_local_setup_util_sh.py'
+[23.179s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/igor/tb2_ros2_nav2/ros2_ws/install/setup.sh'
+[23.180s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/igor/tb2_ros2_nav2/ros2_ws/install/local_setup.bash'
+[23.180s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/igor/tb2_ros2_nav2/ros2_ws/install/setup.bash'
+[23.181s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/igor/tb2_ros2_nav2/ros2_ws/install/local_setup.zsh'
+[23.181s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/igor/tb2_ros2_nav2/ros2_ws/install/setup.zsh'
