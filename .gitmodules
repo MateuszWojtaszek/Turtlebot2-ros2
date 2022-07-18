@@ -27,3 +27,8 @@
 	path = ros2_ws/src/turtlebot
 	url = https://github.com/igrak34/turtlebot.git
 	branch = galactic
+
+[submodule "ros2_ws/src/kobuki_ros"]
+	path = ros2_ws/src/kobuki_ros
+	url = https://github.com/igrak34/kobuki_ros.git
+	branch = galactic-devel
