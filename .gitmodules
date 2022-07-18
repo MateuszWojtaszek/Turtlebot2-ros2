@@ -23,8 +23,4 @@
 	url = https://github.com/igrak34/urg_node.git
 	branch = foxy-devel
 
-[submodule "ros2_ws/src/turtlebot"]
-	path = ros2_ws/src/turtlebot
-	url = https://github.com/igrak34/turtlebot.git
-	branch = galactic
 
