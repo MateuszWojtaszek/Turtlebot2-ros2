@@ -1,10 +1,36 @@
-# Spis treści
+# Instalacja repozytorium
+Repozytorium zawiera w sobie część modułów potrzebnych do działania, natomiast część należy pobrać dodatkowo. W celu instalacji tego repozytorium należy:
+* pobrać główne repozytorium wraz z submodulami
+    ```bash
+    git clone --recurse-submodules https://git.kcir.pwr.edu.pl/irak/tb2_ros2_nav2.git
+    ```
+* pobrać moduły, które zostały zmodyfikowane i przystosowane do TurtleBota2
+    ```bash
+    cd tb2_ros2_nav2/ros2_ws/src
+    git clone https://git.kcir.pwr.edu.pl/irak/turtlebot2.git
+    git clone https://github.com/igrak34/kobuki_ros.git
+    ```
+* Zainstalować konieczne dependencje
+    ```bash
+    cd ~/tb2_ros2_nav2/ros2_ws
+    sudo rosdep install --from-path src --ignore-src --rosdistro galactic
+    ```
+* Zbudować wszystkie paczki
+    ```bash
+    cd ~/tb2_ros2_nav2/ros2_ws
+    colcon build --symlink-install
+    ```
+# Dokumentacja
+## Spis treści
 
 ### 1. [Instalacja Ubuntu 20.04 na Intel NUC](#1-instalacja-ubuntu-2004-na-intel-nuc-1)
 ### 2. [Zmiana systemu przy połączeniu ssh](#2-zmiana-systemu-przy-poc582c485czeniu-ssh-1)
 ### 3. [Instalacja ROS2 Galactic na Ubuntu 20.04](#3-instalacja-ros2-galactic-na-ubuntu-2004-1)
 ### 4. [Instalacja Nav2 na Ubuntu 20.04 na Intel NUC](#4-instalacja-nav2-na-ubuntu-2004-na-intel-nuc-binarki)
 ### 5. [Instalacja sterowników Kobuki Base (ROS2 Galactic)](#5-instalacja-sterowników-kobuki-base-ros2-galacitc)
+### 6. [Obsługa skanera laserowego Hokuyo](#6-obsc582uga-skanera-laserowego-hokuyo-1)
+### 7. [URDF TurtleBota 2](#7-urdf-turtlebota2)
+### 8. [Paczka `turtlebot2`](#8-paczka-turtlebot2-1)
 ---
 
 # 1. Instalacja Ubuntu 20.04 na Intel NUC
@@ -214,4 +240,64 @@ Jeżeli występuje ostrzeżenie
 
 ---
 
-# 6. Obsługa skanera laserowego Hokuyo 
+# 6. Obsługa skanera laserowego Hokuyo
+> **Adres IP lasera Hokuyo:** `192.168.0.10`
+W celu konfiguracji skanera laserowego Hokuyo wpiętego do Intel NUC przez port ethernet należy:
+* Ustawić poprawną konfigurację połączenia
+    * wejść w `wired connections` w ustawieniach Ubuntu
+    * wybrać zakładkę IPv4
+    * zaznaczyć opcję `manual`
+    * wpisać poniższe ustawienia:
+    > Adress: 192.168.0.15  
+    Netmask: 255.255.255.0  
+    Gateway: 192.168.0.1
+    * zrebootować system
+        ```bash
+        sudo reboot
+        ```
+> **Uwaga!**  
+Jeżeli konfiguracja przebiegła pomyślnie to możliwe będzie zpingowanie lasera
+```bash
+ping 192.168.0.10
+```
+
+Aby uruchomić ROSowy node lasera należy wywołać
+```bash
+ros2 launch urg_node urg_node_launch.py sensor_interface:=ethernet
+```
+> **Uwaga!**  
+W celu sprawdzenia poprawności działania skanera należy w osobnych terminalach uruchomić static publishera, zapewniającego sztuczną transformacje między mapą a laserem, oraz `rviz2`:
+```bash
+ros2 run tf2_ros static_transform_publisher 0 0 0 0 0 0 "map" "laser"
+```
+```bash
+rviz2
+```
+---
+
+
+# 7. URDF TurtleBota2
+Korzystając z repozytorium `Turtlebot` (https://github.com/turtlebot/turtlebot) przygotowanego na ROS1 udało się poprawnie przygotować URDF Turtlebota2, aby zgadzał się ze stanem faktycznym. Więc zamiast kamery 3D przygotowano uproszczony model skanera laserowego i umieszczono go w miejscu, w którym znajduje się w rzeczywistości. Dzięki temu możliwa jest poprawna transformacja położenia lasera.
+
+W celu wyświetlenia modelu robota wystarczy wywołać
+```bash
+ros2 launch turtlebot2_description display.launch.py
+```
+
+Poza tym istnieje możliwość wyświetlania zarówno skanu laserowego i robota, wystarczy w drugim terminalu wywołać:
+```bash
+ros2 launch urg_node urg_node_launch.py sensor_interface:=ethernet
+```
+i w rviz'ie zasubskrybować odpowiedni topic.
+
+***URDF znajduje się w paczce `turtlebot2` (opisano poniżej)***
+
+---
+
+# 8. Paczka `turtlebot2`
+
+W celu łatwej inicjalizacji stworzono paczkę turtlebot2, która docelowo zawierać będzie konfigurację i skrypty uruchamiające do funkcjonalności takich jak SLAM czy nawigacja.  
+
+(STAN NA 20.07.2022) Do tej pory udało się stworzyć paczki:
+* `turtlebot2_description` - URDF robota do wizualizacji, transformacji i symulacji
+* `turtlebot2_bringup` - skrypty inicjalizujące najważniejsze moduły
