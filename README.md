@@ -31,6 +31,7 @@ Repozytorium zawiera w sobie część modułów potrzebnych do działania, natom
 ### 6. [Obsługa skanera laserowego Hokuyo](#6-obsc582uga-skanera-laserowego-hokuyo-1)
 ### 7. [URDF TurtleBota 2](#7-urdf-turtlebota2)
 ### 8. [Paczka `turtlebot2`](#8-paczka-turtlebot2-1)
+### 9. [Konfiguracja sieci na Intel NUC dla poprawnej komunikacji ROS2 w sieci lokalnej](#9-konfiguracja-sieci-na-intel-nuc-dla-poprawnej-komunikacji-ros2-w-sieci-lokalnej-1)
 ---
 
 # 1. Instalacja Ubuntu 20.04 na Intel NUC
@@ -250,7 +251,7 @@ W celu konfiguracji skanera laserowego Hokuyo wpiętego do Intel NUC przez port 
     * wpisać poniższe ustawienia:
     > Adress: 192.168.0.15  
     Netmask: 255.255.255.0  
-    Gateway: 192.168.0.1
+    Gateway: (zostawić puste)
     * zrebootować system
         ```bash
         sudo reboot
@@ -298,6 +299,38 @@ i w rviz'ie zasubskrybować odpowiedni topic.
 
 W celu łatwej inicjalizacji stworzono paczkę turtlebot2, która docelowo zawierać będzie konfigurację i skrypty uruchamiające do funkcjonalności takich jak SLAM czy nawigacja.  
 
-(STAN NA 20.07.2022) Do tej pory udało się stworzyć paczki:
+***(STAN NA 24.07.2022)***  
+Do tej pory udało się stworzyć paczki:
 * `turtlebot2_description` - URDF robota do wizualizacji, transformacji i symulacji
-* `turtlebot2_bringup` - skrypty inicjalizujące najważniejsze moduły
+* `turtlebot2_bringup` - skrypty inicjalizujące najważniejsze moduły - pozwala na sterowanie po topic'u `cmd_vel`, na odczytywanie skanu laserowego i odczytywanie informacji z Kobuki
+* `turtlebot2_slam` - skrypty inicjalizujące mapowanie otoczenia za pomocą skanera laserowego (na 24.07.2022 tylko `slam_toolbox` - w planie `cartographer`)
+* `turtlebot2_nav` - skrypty i konfiguracje inicjalizujące stos nawigacyjny `Nav2` i lokalizujący robota (AMCL)
+---
+
+# 9. Konfiguracja sieci na Intel NUC dla poprawnej komunikacji ROS2 w sieci lokalnej
+
+Podczas pracy ze skanerem laserowym, którego interfejsem podłączenia do Intel NUC był `ethernet` powstał problem, w którym ROS2 próbował udostępniać dane w sieci skanera laserowego zamiast w sieci laboratorium (WiFi). Aby to rozwiązać należy:
+* W "Wired Connection" w ustawieniach Ubuntu należy ustawić 
+    ```
+    Adress: 192.168.0.15
+    Mask: 255.255.255.0
+    Gateway: (zostawić puste)
+    ```
+* Stworzyć plik konfiguracyjny `cyclonedds.xml` (na przykład w folderze `home`)
+    ```xml
+    <?xml version="1.0" encoding="UTF-8"?>  
+    <CycloneDDS xmlns="https://cdds.io/config"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://cdds.io/config
+    https://raw.githubusercontent.com/eclipse-cyclonedds/cyclonedds/master/etc/cyclonedds.xsd">
+        <Domain id="any">
+            <General>
+                <NetworkInterfaceAddress>wlp58s0</NetworkInterfaceAddress>
+            </General>
+        </Domain>  
+    </CycloneDDS>
+    ```
+* Wpisać następującą linię do pliku `~/.bashrc` **(ustawić odpowiednią ścieżkę)**
+    ```
+    export CYCLONEDDS_URI=file://$PWD/cyclonedds.xml
+    ```
