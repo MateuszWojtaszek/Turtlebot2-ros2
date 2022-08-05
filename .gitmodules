@@ -18,9 +18,3 @@
 	url = https://github.com/kobuki-base/kobuki_ros_interfaces.git
 	branch = devel
 
-[submodule "urg_node_galactic"]
-	path = ros2_ws/src/urg_node
-	url = https://github.com/igrak34/urg_node.git
-	branch = foxy-devel
-
-
