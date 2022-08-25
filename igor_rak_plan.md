@@ -1,4 +1,28 @@
+
 # Sugerowany plan inżynierki
+
+- [Sugerowany plan inżynierki](#sugerowany-plan-inżynierki)
+  - [Początkowy opis z propozycji tematu](#początkowy-opis-z-propozycji-tematu)
+  - [Plan rozdziałów pracy inżynierskiej](#plan-rozdziałów-pracy-inżynierskiej)
+    - [Wprowadzenie](#wprowadzenie)
+      - [1.1 Cel i zakres pracy](#11-cel-i-zakres-pracy)
+      - [1.2 Realizacja i narzędzia](#12-realizacja-i-narzędzia)
+    - [Architektura Robot Operating System 2 (ROS2)](#architektura-robot-operating-system-2-ros2)
+      - [Podejście komponentowe do projektów w robotyce](#podejście-komponentowe-do-projektów-w-robotyce)
+      - [Podstawowe koncepty komunikacji](#podstawowe-koncepty-komunikacji)
+      - [Uruchamianie złożonych systemów robotycznych](#uruchamianie-złożonych-systemów-robotycznych)
+    - [Stos nawigacyjny Nav2](#stos-nawigacyjny-nav2)
+    - [Robot TurtleBot2](#robot-turtlebot2)
+      - [Fizyczny robot w laboratorium](#fizyczny-robot-w-laboratorium)
+      - [Model URDF przeznaczony do symulacji](#model-urdf-przeznaczony-do-symulacji)
+      - [Oprogramowanie](#oprogramowanie)
+    - [Napotkane i rozwiązane problemy](#napotkane-i-rozwiązane-problemy)
+      - [Sprzętowe](#sprzętowe)
+        - [Sterowniki `kobuki_base`](#sterowniki-kobuki_base)
+        - [LiDAR z złączem Ethernet](#lidar-z-złączem-ethernet)
+      - [Programowe](#programowe)
+    - [Przygotowanie zestawu paczek `turtlebot2`](#przygotowanie-zestawu-paczek-turtlebot2)
+    - [Podsumowanie](#podsumowanie)
 
 ## Początkowy opis z propozycji tematu
 
@@ -7,13 +31,13 @@ Temat 1:
 
 Zadania w ramach takiego projektu inżynierskiego:
 
-* modernizacja oprogramowania sterowników ROBOTIS Turtlebota 2 z ROS1 Kinetic do ROS2 Galactic/Humble
+- modernizacja oprogramowania sterowników ROBOTIS Turtlebota 2 z ROS1 Kinetic do ROS2 Galactic/Humble
 
-* zapoznanie z paczkami Nav2 do sterowania robotem mobilnym
+- zapoznanie z paczkami Nav2 do sterowania robotem mobilnym
 
-* implementacja własnych pluginów w Nav2 (trudniejsze) / scenariuszy na bazie Behavior Tree (łatwiejsze) do zastosowania w Nav2
+- implementacja własnych pluginów w Nav2 (trudniejsze) / scenariuszy na bazie Behavior Tree (łatwiejsze) do zastosowania w Nav2
 
-* dodatkowe (dla najlepszych) udostępnienie open-source pluginów w repozytorium OpenRobotics od ROS-a 2
+- dodatkowe (dla najlepszych) udostępnienie open-source pluginów w repozytorium OpenRobotics od ROS-a 2
 
 Student pod nadzorem przygotowuje wg znanych instrukcji przeniesienie sterowników hardware'owych TB2 (ROS1 Kinetic, 2016, już bez wsparcia) na wersję z ROS2 Galactic/Humble (2021/2022, wspierane do 2027). Następnie zapoznaje się z stosem nawigacyjnym Nav2 do sterowania robotem mobilnym i przygotowuje scenariusz jego użycia (np. AMR w magazynie). Jeśli wystarczy czasu, to student może wybrać plugin (fragment oprogramowania) do dodania do pracy i potem jako Pull Request do repozytorium OpenRobotics (ros-planning/Nav2).
 
@@ -21,21 +45,21 @@ Student pod nadzorem przygotowuje wg znanych instrukcji przeniesienie sterownik�
 
 Przechodzę w opisie od ogółu do szczegółów, pamiętaj, że to tylko i wyłącznie sugestie, jak ja bym to zrobił na Twoim miejscu. Zwykle w pracy dyplomowej miejsce w swoich rozdziałach mają:
 
-* wprowadzenie/wstęp z uzasadnieniem wyboru takiego, a nie innego tematu, jego znaczenie w dziedzinie robotyki, to tutaj przeważnie wspomina się najwięcej źródeł poza rozdziałami z teorią - umiejscawiasz swoją pracę w konkretnej gałęzi robotyki, wprowadzasz ogólnikowo cel pracy i wyjaśniasz znaczenie swoich rozwiązań i osiągnięć w ramach projektu inżynierskiego/badawczego, zarysowujesz wykorzystane narządzia i układ rozdziałów z ich zawartością
+- wprowadzenie/wstęp z uzasadnieniem wyboru takiego, a nie innego tematu, jego znaczenie w dziedzinie robotyki, to tutaj przeważnie wspomina się najwięcej źródeł poza rozdziałami z teorią - umiejscawiasz swoją pracę w konkretnej gałęzi robotyki, wprowadzasz ogólnikowo cel pracy i wyjaśniasz znaczenie swoich rozwiązań i osiągnięć w ramach projektu inżynierskiego/badawczego, zarysowujesz wykorzystane narządzia i układ rozdziałów z ich zawartością
 
-* teoria - wprowadzasz tutaj definicje i określenia używane dalej do komunikowania informacji czytelnikowi w kolejnych częściach pracy, wyjaśniasz ogólną postać projektu/systemu, podstawy użytych technologii, osobno ich znaczenie w Twojej pracy (najlepiej z przykładami); tutaj może trafić już w pełni konkretny opis celu pracy
+- teoria - wprowadzasz tutaj definicje i określenia używane dalej do komunikowania informacji czytelnikowi w kolejnych częściach pracy, wyjaśniasz ogólną postać projektu/systemu, podstawy użytych technologii, osobno ich znaczenie w Twojej pracy (najlepiej z przykładami); tutaj może trafić już w pełni konkretny opis celu pracy
 
-* praktyka/implementacja, wykonana praca w ramach oprogramowania i sprzętu, tutaj opierasz się na definicjach wprowadzonych w rozdziale o teorii, zakładając, że czytelnik już +- wie, o co chodzi; opisane tutaj mogą być także napotkane problemy i ślepe uliczki w przeprowadzonej pracy i badaniach, których podkreślenie wyjaśni część decyzji projektowych dalej lub zaznaczy interesujące problemy badawcze.
+- praktyka/implementacja, wykonana praca w ramach oprogramowania i sprzętu, tutaj opierasz się na definicjach wprowadzonych w rozdziale o teorii, zakładając, że czytelnik już +- wie, o co chodzi; opisane tutaj mogą być także napotkane problemy i ślepe uliczki w przeprowadzonej pracy i badaniach, których podkreślenie wyjaśni część decyzji projektowych dalej lub zaznaczy interesujące problemy badawcze.
 
 ### Wprowadzenie
 
 Tutaj powinien być ogólny zarys i argumenty za chęcią uzyskania modułowości dla systemów robotycznych o większej złożoności (manipulatory, roboty mobilne, systemy wizyjne, systemy lokalizacji itd.), zachęty do pisania i udostępniania paczek oprogramowania, które są możliwe do ponownego użycia przez innych, do tego są przeważnie open-source, można skontatkować się z ich autorami w miarę możliwości, powstrzymują zjawisko "wynajdywania koła na nowo", pozwalają na łatwiejszą integrację między różnymi projektami i grupami badawczymi na uczelniach i w przemyśle (hasła: ROS Industrial, kilka większych projektów związanych z przemysłem adaptującym ROS też się nada, są 2 główne publikacje o ROS1 i ROS2, gdzie są charakteryzowane całkiem dobrze). Potem możesz wspomnieć, że to bardzo aktywnie rozwijająca się dziedzina i utrzymanie robotycznego sprzętu w działaniu wymaga często bieżącej pracy nad sprzętem i oprogramowaniem, aby korzystać z jej najnowszych zdobyczy.
 
-#### 1.1 Cel i zakres pracy
+#### Cel i zakres pracy
 
 Po uzasadnieniu, dlaczego open-source jest ważny, przedstawiasz w liściue obecny stan laboratorium, sprzętowy i programowy (ROS1 Kinetic, Ubuntu 16.04, flota robotów mobilnych Turtlebot 2 + ich czujniki) i przedstawiasz plan swojej pracy w tym projekcie (na bazie tego, co już mamy na razie byłoby ok, potem się to poprawi i doda wszystko). To ostatnie zadanie z pluginem dodasz, jak się uda, wiadomo :) Ale już samo przygotowanie scenariusza w symulacji plus nagranie filmiku z laboratorium a la digital twin byłoby w sam raz na inżynierkę dobrą.
 
-#### 1.2 Realizacja i narzędzia
+#### Realizacja i narzędzia
 
 Tutaj lecisz __zwięzłą__ listą wypunktowaną, co udało się zrobić i w którym rozdziale/sekcji których rozdziałów jest tego opis, sposoby użycia + schematy z dokumentacji itd. Wrzuciłem Ci moją magisterkę, abyś zobaczył, jak ona wyglądała, możesz sobie podejrzeć, co było uznane przez Profesor za dobry układ pracy (chociaż akurat tylko z symulacjami, bez sprzętu).
 W opisie narzędzi wymieniasz wszystkie wersje: oprogramowania, ROS-a, model robota i sprzęt na nim.
@@ -88,3 +112,5 @@ W tym rozdziale skupiłbym się na podstawowych składnikach potrzebnych do uruc
 #### Programowe
 
 ### Przygotowanie zestawu paczek `turtlebot2`
+
+### Podsumowanie
