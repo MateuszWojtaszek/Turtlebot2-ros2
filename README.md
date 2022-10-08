@@ -32,6 +32,7 @@ Repozytorium zawiera w sobie część modułów potrzebnych do działania, natom
 ### 7. [URDF TurtleBota 2](#7-urdf-turtlebota2)
 ### 8. [Paczka `turtlebot2`](#8-paczka-turtlebot2-1)
 ### 9. [Konfiguracja sieci na Intel NUC dla poprawnej komunikacji ROS2 w sieci lokalnej](#9-konfiguracja-sieci-na-intel-nuc-dla-poprawnej-komunikacji-ros2-w-sieci-lokalnej-1)
+### 10. [Konfiguracja MOCAP4ROS2](#10-konfiguracja-mocap4ros2-1)
 ---
 
 # 1. Instalacja Ubuntu 20.04 na Intel NUC
@@ -334,3 +335,77 @@ Podczas pracy ze skanerem laserowym, którego interfejsem podłączenia do Intel
     ```
     export CYCLONEDDS_URI=file://$PWD/cyclonedds.xml
     ```
+
+# 10. Konfiguracja MOCAP4ROS2
+## Instalacja
+```bash
+mkdir -p mocap_ws/src
+cd mocap_ws/src
+git clone https://github.com/MOCAP4ROS2-Project/mocap4ros2_optitrack.git
+git clone https://github.com/MOCAP4ROS2-Project/mocap_msgs.git
+git clone https://github.com/MOCAP4ROS2-Project/mocap.git
+cd ..
+colcon build
+```
+> **Uwaga!**  
+Jeżeli nie uda się skompilować, należy poprawić plik nagłówkowy w pliku `mocap_ws/src/mocap/mocap_robot_gt/mocap_robot_gt/src/mocap_robot_gt/gt_component.cpp` z ```#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>``` na ```#include <tf2_geometry_msgs/tf2_geometry_msgs.h>```
+
+Następnie zainstalować NatNetSDK
+```bash
+cd mocap_ws/src/mocap4ros2_optitrack/mocap_optitrack_driver/
+python3 install_sdk.py
+```
+
+## Konfiguracja w 07 na komputerze `192.168.0.100`
+```yaml
+mocap_optitrack_driver_node:
+  ros__parameters:
+    connection_type: "Multicast" # Unicast / Multicast
+    server_address: "192.168.0.40"
+    local_address: "192.168.0.100"
+    multicast_address: "239.255.42.99"
+    server_command_port: 1510
+    server_data_port: 1511
+    rigid_body_name: "ground"
+    lastFrameNumber: 0
+    frameCount: 0
+    droppedFrameCount: 0
+    n_markers: 0
+    n_unlabeled_markers: 0
+    qos_history_policy: "keep_all"         # keep_all / keep_last
+    qos_reliability_policy: "best_effort"  # best_effort / reliable
+    qos_depth: 10                         # 10 / 100 / 1000
+```
+
+## Konfiguracja `motive`
+Settings/Streaming:
+* **Local Interface:** 192.168.0.40
+* **Transmission Type:** Multicast 
+* **Rigid Bodies:** ON 
+* **Up Axix:** Z-Axis 
+* **Commmand Port:** 1510
+* **Data Port:** 1511 
+* **Multicast Interface:** 239.255.42.99 
+
+## Uruchamianie launchfile sterownika `mocap`
+W pliku `mocap_ws/src/mocap4ros2_optitrack/mocap_optitrack_driver/launch/optitrack2.launch.py` odkomentować kod:
+```py
+driver_activate_trans_event = EmitEvent(
+    event = ChangeState(
+        lifecycle_node_matcher = launch.events.matchers.matches_action(driver_node),
+        transition_id = lifecycle_msgs.msg.Transition.TRANSITION_ACTIVATE,
+    )
+)
+```
+i
+```py
+ld.add_action(driver_activate_trans_event)
+```
+Następnie wywołać w `mocap_ws`:
+```bash
+colcon build
+source install/setup.bash
+ros2 launch mocap_optitrack_driver optitrack2.launch.py
+```
+
+
