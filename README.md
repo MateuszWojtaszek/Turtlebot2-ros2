@@ -107,7 +107,7 @@ ROS'a zainstalować zgodnie z instrukcjami z https://docs.ros.org/en/galactic/In
  Po zainstalowaniu:
 * Dodać odpowiedni wpis do `.bashrc`
     ```bash
-    echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+    echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
     ```
 * Zostawić ROS_DOIMAIN_ID bez zmian (stan na 27.06.2022)
 * Zainstalować narzędzie `colcon` (przydatne potem)
@@ -117,7 +117,7 @@ ROS'a zainstalować zgodnie z instrukcjami z https://docs.ros.org/en/galactic/In
 * Skonfigurować `colcon_cd` oraz autouzupełnianie
     ```bash
     echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
-    echo "export _colcon_cd_root=/opt/ros/humble/" >> ~/.bashrc
+    echo "export _colcon_cd_root=/opt/ros/galactic/" >> ~/.bashrc
     echo "source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" >> ~/.bashrc
     ```
 > **Uwaga!**  
@@ -151,9 +151,9 @@ W celu zainstalowania binarek `Nav2`:
 > **Uwaga!**  
 W celu przetestowania poprawności działania `Nav2` można uruchomić przykładową symulację Turtlebot3:
 ```bash
-sudo apt install ros-humble-turtle*
+sudo apt install ros-galacitc-turtle*
 export TURTLEBOT3_MODEL=waffle
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/humble/share/turtlebot3_gazebo/models
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/galacitc/share/turtlebot3_gazebo/models
 ros2 launch nav2_bringup tb3_simulation_launch.py
 ```
 ---
