@@ -309,6 +309,15 @@ Do tej pory udało się stworzyć paczki:
 * `turtlebot2_bringup` - skrypty inicjalizujące najważniejsze moduły - pozwala na sterowanie po topic'u `cmd_vel`, na odczytywanie skanu laserowego i odczytywanie informacji z Kobuki
 * `turtlebot2_slam` - skrypty inicjalizujące mapowanie otoczenia za pomocą skanera laserowego (na 24.07.2022 tylko `slam_toolbox` - w planie `cartographer`)
 * `turtlebot2_nav` - skrypty i konfiguracje inicjalizujące stos nawigacyjny `Nav2` i lokalizujący robota (AMCL)
+
+* `TESTY:`
+* `Uruchamianie robota (drive i laser):` - ros2 launch turtlebot2_bringup turtlebot2_bringup.launch.py
+* `Uruchamianie Nav2 całego:` - ros2 laucnh turtlebot2_nav nav2.launch.py namespace:=tb2_1
+* `Uruchamianie widoku Nav2:` - ros2 launch turtlebot2_nav rviz_nav2.launch.py namespace:=tb2_1
+
+namespacy są ważne!(rozróżnianie robotów w sieci)
+
+*`gdyby wystąpił błąd w launch file trzeba zmienic node_executable na executable!!!!`
 ---
 
 # 9. Konfiguracja sieci na Intel NUC dla poprawnej komunikacji ROS2 w sieci lokalnej
