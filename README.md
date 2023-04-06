@@ -21,6 +21,17 @@ Repozytorium zawiera w sobie część modułów potrzebnych do działania, natom
     ```bash
     cd ~/tb2_ros2_nav2/ros2_ws
     colcon build --symlink-install
+    jak nie zadziala to zainstalowac:
+    sudo apt install ros-galactic-ecl-build 
+    sudo apt install ros-galactic-ecl-commandline
+    sudo apt install ros-galactic-ecl-config
+    sudo apt install ros-galactic-ecl-core
+    sudo apt install ros-galactic-ecl-console
+                                      mobile robot
+                                      
+    or try just:
+    rosdep install --from-paths src --ignore-src -y --skpis-keys "fastcdr rti-connext-dds-5.3.1urdfdom_headers"
+    sudo apt install ros-galactic-joint -state-publisher-gui
     ```
 # Dokumentacja
 ## Spis treści
@@ -318,6 +329,8 @@ Do tej pory udało się stworzyć paczki:
 namespacy są ważne!(rozróżnianie robotów w sieci)
 
 *`gdyby wystąpił błąd w launch file trzeba zmienic node_executable na executable!!!!`
+ cd /opt/ros/galactic/share/urg_node/launch
+ vim urg_node_launch.py
 ---
 
 # 9. Konfiguracja sieci na Intel NUC dla poprawnej komunikacji ROS2 w sieci lokalnej
