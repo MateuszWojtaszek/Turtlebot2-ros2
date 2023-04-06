@@ -14,6 +14,8 @@ Repozytorium zawiera w sobie część modułów potrzebnych do działania, natom
     ```bash
     cd ~/tb2_ros2_nav2/ros2_ws
     sudo rosdep install --from-path src --ignore-src --rosdistro galactic
+    jesli nie zadziała użyć komendy:
+    rosdep update --include-eol-distros
     ```
 * Zbudować wszystkie paczki
     ```bash
@@ -84,6 +86,7 @@ gdzie `N` określa system, który zostanie włączony po reboocie.
 Po przełączeniu systemu pojawia się problem z kluczem `ssh`, przez co nie jest możliwe bezpieczne połączenie. Aby połączyć się z nowym systemem po reboocie, należy wykonać
 ```bash
 ssh-keygen -f "/home/${USER}/.ssh/known_hosts" -R "192.168.5.55"
+do zmiany
 ```
 
 > **Uwaga!**  
@@ -302,7 +305,7 @@ W celu łatwej inicjalizacji stworzono paczkę turtlebot2, która docelowo zawie
 
 ***(STAN NA 24.07.2022)***  
 Do tej pory udało się stworzyć paczki:
-* `turtlebot2_description` - URDF robota do wizualizacji, transformacji i symulacji
+* `turtlebot2_description` - URDF robota do wizualizacji, transformacji i symulacji(do pobrania nowa wersja z repo github igrak34 urg_node foxy_devel)
 * `turtlebot2_bringup` - skrypty inicjalizujące najważniejsze moduły - pozwala na sterowanie po topic'u `cmd_vel`, na odczytywanie skanu laserowego i odczytywanie informacji z Kobuki
 * `turtlebot2_slam` - skrypty inicjalizujące mapowanie otoczenia za pomocą skanera laserowego (na 24.07.2022 tylko `slam_toolbox` - w planie `cartographer`)
 * `turtlebot2_nav` - skrypty i konfiguracje inicjalizujące stos nawigacyjny `Nav2` i lokalizujący robota (AMCL)
