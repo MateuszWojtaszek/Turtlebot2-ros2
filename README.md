@@ -166,9 +166,9 @@ W celu zainstalowania binarek `Nav2`:
 > **Uwaga!**  
 W celu przetestowania poprawności działania `Nav2` można uruchomić przykładową symulację Turtlebot3:
 ```bash
-sudo apt install ros-galacitc-turtle*
+sudo apt install ros-galactic-turtle*
 export TURTLEBOT3_MODEL=waffle
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/galacitc/share/turtlebot3_gazebo/models
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:/opt/ros/galactic/share/turtlebot3_gazebo/models
 ros2 launch nav2_bringup tb3_simulation_launch.py
 ```
 ---
@@ -324,7 +324,7 @@ Do tej pory udało się stworzyć paczki:
 
 * `TESTY:`
 * `Uruchamianie robota (drive i laser):` - ros2 launch turtlebot2_bringup turtlebot2_bringup.launch.py
-* `Uruchamianie Nav2 całego:` - ros2 laucnh turtlebot2_nav nav2.launch.py namespace:=tb2_1          (to najpierw)
+* `Uruchamianie Nav2 całego:` - ros2 launch turtlebot2_nav nav2.launch.py namespace:=tb2_1          (to najpierw)
 * `Uruchamianie widoku Nav2:` - ros2 launch turtlebot2_nav rviz_nav2.launch.py namespace:=tb2_1         (to drugie)
 
 namespacy są ważne!(rozróżnianie robotów w sieci)
