@@ -9,6 +9,7 @@ Repozytorium zawiera w sobie część modułów potrzebnych do działania, natom
     cd tb2_ros2_nav2/ros2_ws/src
     git clone https://git.kcir.pwr.edu.pl/irak/turtlebot2.git
     git clone https://github.com/igrak34/kobuki_ros.git
+    git clone --branch="foxy-devel" https://github.com/igrak34/urg_node.git
     ```
 * Zainstalować konieczne dependencje
     ```bash
@@ -58,7 +59,7 @@ Aby zainstalować `Ubuntu 20.04` na Intel NUC:
     ```
 * Podczas restartu wpiąć pamięć USB z systemem do portu USB Intel NUC (zanim wstanie BIOS)
 * Wejść do `boot menu` za pomocą klawisza `F10`.
-* Wybrać opcji bootowania z USB
+* Wybrać opcji bootowania z USB(boot_Loader!)
 * Po otwarciu się ekranu wyboru `Ubuntu 20.04` wybrać opcję **"Try Ubuntu"**
 * Po otwarciu, w terminalu uruchomić programu `gparted'
     ```bash
@@ -323,8 +324,8 @@ Do tej pory udało się stworzyć paczki:
 
 * `TESTY:`
 * `Uruchamianie robota (drive i laser):` - ros2 launch turtlebot2_bringup turtlebot2_bringup.launch.py
-* `Uruchamianie Nav2 całego:` - ros2 laucnh turtlebot2_nav nav2.launch.py namespace:=tb2_1
-* `Uruchamianie widoku Nav2:` - ros2 launch turtlebot2_nav rviz_nav2.launch.py namespace:=tb2_1
+* `Uruchamianie Nav2 całego:` - ros2 laucnh turtlebot2_nav nav2.launch.py namespace:=tb2_1          (to najpierw)
+* `Uruchamianie widoku Nav2:` - ros2 launch turtlebot2_nav rviz_nav2.launch.py namespace:=tb2_1         (to drugie)
 
 namespacy są ważne!(rozróżnianie robotów w sieci)
 
